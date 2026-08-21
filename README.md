@@ -1,6 +1,6 @@
 # FF6 Gau Rage Finder
 
-Pixel Remaster Veldt pack tracker for Gau's rages.
+Pixel Remaster Veldt pack tracker for Gau's rages. Enter your Veldt monster encounters to determine which encounters are coming up and how long it will be until you find the monster with the Rage you are looking for.
 
 ## Setup
 
