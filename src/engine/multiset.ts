@@ -28,6 +28,3 @@ export function isSubset(partial: MonsterCount[], full: MonsterCount[]): boolean
   return true;
 }
 
-export function multisetToArray(map: MonsterMultiset): MonsterCount[] {
-  return [...map.entries()].map(([name, count]) => ({ name, count }));
-}

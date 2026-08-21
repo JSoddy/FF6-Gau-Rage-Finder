@@ -28,6 +28,7 @@ export function EncounterHistory({ history, onRemoveLast }: EncounterHistoryProp
               className="encounter-box__remove"
               onClick={onRemoveLast}
               title="Remove last encounter"
+              aria-label="Remove last encounter"
             >
               ×
             </button>

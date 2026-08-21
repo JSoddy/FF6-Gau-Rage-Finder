@@ -37,13 +37,3 @@ export function isCompleteMatch(partial: MonsterCount[]): Formation | null {
   return matches.length === 1 ? matches[0] : null;
 }
 
-export function getMatchingFormations(
-  partial: MonsterCount[]
-): Formation[] {
-  if (partial.length === 0) return [];
-  const exact = matchMonstersToFormations(partial);
-  if (exact.length > 0) return exact;
-  return formations.filter(
-    (f) => !f.empty && isSubset(partial, f.monsters)
-  );
-}

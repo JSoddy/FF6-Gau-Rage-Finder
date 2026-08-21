@@ -41,6 +41,7 @@ export interface PositionState {
   locked: boolean;
   currentPack: number | null;
   candidatePacks: number[];
+  resolvedHistory: EncounterEntry[];
 }
 
 export type MonsterMultiset = Map<string, number>;

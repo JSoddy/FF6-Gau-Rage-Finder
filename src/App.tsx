@@ -7,7 +7,6 @@ import {
 } from "./engine/forecast";
 import {
   getCandidatePacksAfterHistory,
-  getCurrentPack,
   resolveObservation,
   resolvePackCandidates,
 } from "./engine/locate";
@@ -23,7 +22,6 @@ import {
   exportState,
   importState,
   loadState,
-  reloadSave,
   saveState,
   type AppState,
 } from "./storage/state";
@@ -46,10 +44,7 @@ export default function App() {
     [state.history]
   );
 
-  const currentPack = useMemo(
-    () => getCurrentPack(state.history),
-    [state.history]
-  );
+  const currentPack = position.currentPack;
 
   const upcoming = useMemo(
     () => (currentPack != null ? getNextFivePacks(currentPack) : []),
@@ -144,11 +139,6 @@ export default function App() {
     updateState({ history: state.history.slice(0, -1) });
   }
 
-  function handleReloadSave() {
-    setState(reloadSave(state));
-    setEntryError(null);
-  }
-
   function handleClearHistory() {
     setState(clearHistory(state));
     setEntryError(null);
@@ -203,19 +193,16 @@ export default function App() {
 
       <div className="app-panel">
         <div className="toolbar">
-        <button type="button" onClick={handleReloadSave}>
-          Reload save
-        </button>
-        <button type="button" onClick={handleClearHistory}>
-          Clear history
-        </button>
-        <button type="button" onClick={handleExport}>
-          Export
-        </button>
-        <button type="button" onClick={handleImport}>
-          Import
-        </button>
-      </div>
+          <button type="button" onClick={handleClearHistory}>
+            Clear history
+          </button>
+          <button type="button" onClick={handleExport}>
+            Export
+          </button>
+          <button type="button" onClick={handleImport}>
+            Import
+          </button>
+        </div>
 
       <RageTable
         have={have}
@@ -229,7 +216,7 @@ export default function App() {
       <div className="middle-row">
         <div className="middle-row__main">
           <EncounterHistory
-            history={state.history}
+            history={position.resolvedHistory}
             onRemoveLast={handleRemoveLast}
           />
           {!position.locked && (

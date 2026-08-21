@@ -1,11 +1,5 @@
-import type { MonsterCount, Formation } from "./types";
+import type { MonsterCount } from "./types";
 import { getCompatibleFormations } from "./matcher";
-
-export function getCompatibleFormationsForPartial(
-  partial: MonsterCount[]
-): Formation[] {
-  return getCompatibleFormations(partial);
-}
 
 export function getNextMonsterOptions(
   partial: MonsterCount[]

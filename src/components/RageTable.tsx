@@ -75,6 +75,7 @@ export function RageTable({
                   <td>
                     <input
                       type="checkbox"
+                      aria-label={`Have ${name} rage`}
                       checked={have.has(name)}
                       onChange={() => onToggleHave(name)}
                     />
@@ -82,6 +83,7 @@ export function RageTable({
                   <td>
                     <input
                       type="checkbox"
+                      aria-label={`Want ${name} rage`}
                       checked={want.has(name)}
                       onChange={() => onToggleWant(name)}
                     />

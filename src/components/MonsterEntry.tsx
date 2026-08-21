@@ -5,9 +5,10 @@ import {
   getValidCountsForMonster,
 } from "../engine/constraints";
 import { isCompleteMatch } from "../engine/matcher";
+import { createId } from "../storage/state";
 
 interface MonsterRow {
-  id: number;
+  id: string;
   monster: string;
   count: number;
 }
@@ -18,9 +19,11 @@ interface MonsterEntryProps {
   positionLocked?: boolean;
 }
 
-let rowId = 0;
+function createInitialRow(): MonsterRow {
+  return { id: createId(), monster: "", count: 1 };
+}
 
-function rowsToPartial(rows: MonsterRow[], excludeId?: number): MonsterCount[] {
+function rowsToPartial(rows: MonsterRow[], excludeId?: string): MonsterCount[] {
   const map = new Map<string, number>();
   for (const row of rows) {
     if (row.id === excludeId || !row.monster) continue;
@@ -30,9 +33,7 @@ function rowsToPartial(rows: MonsterRow[], excludeId?: number): MonsterCount[] {
 }
 
 export function MonsterEntry({ onSubmit, error, positionLocked = false }: MonsterEntryProps) {
-  const [rows, setRows] = useState<MonsterRow[]>([
-    { id: rowId++, monster: "", count: 1 },
-  ]);
+  const [rows, setRows] = useState<MonsterRow[]>([createInitialRow()]);
 
   const partial = useMemo(() => rowsToPartial(rows), [rows]);
 
@@ -41,27 +42,27 @@ export function MonsterEntry({ onSubmit, error, positionLocked = false }: Monste
     [partial]
   );
 
-  function updateRow(id: number, patch: Partial<MonsterRow>) {
+  function updateRow(id: string, patch: Partial<MonsterRow>) {
     setRows((prev) =>
       prev.map((r) => (r.id === id ? { ...r, ...patch } : r))
     );
   }
 
   function addRow() {
-    setRows((prev) => [...prev, { id: rowId++, monster: "", count: 1 }]);
+    setRows((prev) => [...prev, createInitialRow()]);
   }
 
-  function removeRow(id: number) {
+  function removeRow(id: string) {
     setRows((prev) => {
       const next = prev.filter((r) => r.id !== id);
-      return next.length > 0 ? next : [{ id: rowId++, monster: "", count: 1 }];
+      return next.length > 0 ? next : [createInitialRow()];
     });
   }
 
   function handleSubmit() {
     if (partial.length === 0) return;
     onSubmit(partial);
-    setRows([{ id: rowId++, monster: "", count: 1 }]);
+    setRows([createInitialRow()]);
   }
 
   return (
@@ -79,20 +80,23 @@ export function MonsterEntry({ onSubmit, error, positionLocked = false }: Monste
           monsterOptions.unshift(row.monster);
         }
         monsterOptions.sort((a, b) => a.localeCompare(b));
-        const countOptions = row.monster
+        const rawCounts = row.monster
           ? getValidCountsForMonster(partialBefore, row.monster)
           : [1];
+        const countOptions = rawCounts.length > 0 ? rawCounts : [1];
 
         return (
           <div key={row.id} className="monster-row">
             <select
+              aria-label="Select monster"
               value={row.monster}
               onChange={(e) => {
                 const monster = e.target.value;
                 const counts = monster
                   ? getValidCountsForMonster(partialBefore, monster)
                   : [1];
-                updateRow(row.id, { monster, count: counts[0] ?? 1 });
+                const validCounts = counts.length > 0 ? counts : [1];
+                updateRow(row.id, { monster, count: validCounts[0] ?? 1 });
               }}
             >
               <option value="">Select monster…</option>
@@ -103,6 +107,7 @@ export function MonsterEntry({ onSubmit, error, positionLocked = false }: Monste
               ))}
             </select>
             <select
+              aria-label="Select monster count"
               value={row.count}
               disabled={!row.monster}
               onChange={(e) =>
@@ -116,7 +121,11 @@ export function MonsterEntry({ onSubmit, error, positionLocked = false }: Monste
               ))}
             </select>
             {rows.length > 1 && (
-              <button type="button" onClick={() => removeRow(row.id)}>
+              <button
+                type="button"
+                aria-label="Remove monster row"
+                onClick={() => removeRow(row.id)}
+              >
                 Remove
               </button>
             )}
@@ -144,3 +153,4 @@ export function MonsterEntry({ onSubmit, error, positionLocked = false }: Monste
     </div>
   );
 }
+

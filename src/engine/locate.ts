@@ -1,6 +1,6 @@
 import type { EncounterEntry, MonsterCount, PositionState } from "./types";
 import { matchMonstersInPack, matchMonstersToFormations } from "./matcher";
-import { nextNonEmptyPack } from "./rotation";
+import { nextNonEmptyPack, prevNonEmptyPack } from "./rotation";
 
 export function getPacksForObservation(
   monsters: MonsterCount[],
@@ -65,16 +65,75 @@ export function resolveObservation(
   return { resolved: false, candidatePacks };
 }
 
+export function resolveHistoryEntries(
+  history: EncounterEntry[]
+): EncounterEntry[] {
+  const resolved = history.map((entry) => ({ ...entry }));
+  let candidatePacks: number[] | null = null;
+
+  // 1. Forward candidate pass
+  for (let i = 0; i < resolved.length; i++) {
+    const entry = resolved[i];
+    if (entry.resolved && entry.pack != null) {
+      candidatePacks = [entry.pack];
+    } else {
+      candidatePacks = getPacksForObservation(entry.monsters, candidatePacks);
+      if (candidatePacks.length === 1) {
+        const pack = candidatePacks[0];
+        const matches = matchMonstersInPack(pack, entry.monsters);
+        if (matches.length > 0) {
+          resolved[i].pack = pack;
+          resolved[i].slot = matches[0].slot;
+          resolved[i].resolved = true;
+        }
+      }
+    }
+  }
+
+  // 2. Backward resolution pass to resolve prior ambiguous encounters
+  for (let i = resolved.length - 1; i >= 1; i--) {
+    if (resolved[i].resolved && resolved[i].pack != null) {
+      if (!resolved[i - 1].resolved || resolved[i - 1].pack == null) {
+        const prevPack = prevNonEmptyPack(resolved[i].pack!);
+        const matches = matchMonstersInPack(prevPack, resolved[i - 1].monsters);
+        if (matches.length > 0) {
+          resolved[i - 1].pack = prevPack;
+          resolved[i - 1].slot = matches[0].slot;
+          resolved[i - 1].resolved = true;
+        }
+      }
+    }
+  }
+
+  // 3. Forward propagation pass
+  for (let i = 0; i < resolved.length - 1; i++) {
+    if (resolved[i].resolved && resolved[i].pack != null) {
+      if (!resolved[i + 1].resolved || resolved[i + 1].pack == null) {
+        const nextPack = nextNonEmptyPack(resolved[i].pack!);
+        const matches = matchMonstersInPack(nextPack, resolved[i + 1].monsters);
+        if (matches.length > 0) {
+          resolved[i + 1].pack = nextPack;
+          resolved[i + 1].slot = matches[0].slot;
+          resolved[i + 1].resolved = true;
+        }
+      }
+    }
+  }
+
+  return resolved;
+}
+
 export function resolvePackCandidates(
   history: EncounterEntry[]
 ): PositionState {
   if (history.length === 0) {
-    return { locked: false, currentPack: null, candidatePacks: [] };
+    return { locked: false, currentPack: null, candidatePacks: [], resolvedHistory: [] };
   }
 
+  const resolvedHistory = resolveHistoryEntries(history);
   let candidatePacks: number[] | null = null;
 
-  for (const entry of history) {
+  for (const entry of resolvedHistory) {
     if (entry.resolved && entry.pack != null) {
       candidatePacks = [entry.pack];
       continue;
@@ -84,7 +143,7 @@ export function resolvePackCandidates(
   }
 
   if (candidatePacks === null || candidatePacks.length === 0) {
-    return { locked: false, currentPack: null, candidatePacks: [] };
+    return { locked: false, currentPack: null, candidatePacks: [], resolvedHistory };
   }
 
   const locked = candidatePacks.length === 1;
@@ -93,25 +152,15 @@ export function resolvePackCandidates(
     locked,
     currentPack: locked ? candidatePacks[0] : null,
     candidatePacks,
+    resolvedHistory,
   };
 }
 
 export function getCandidatePacksAfterHistory(
   history: EncounterEntry[]
 ): number[] | null {
-  if (history.length === 0) return null;
-
-  let candidatePacks: number[] | null = null;
-
-  for (const entry of history) {
-    if (entry.resolved && entry.pack != null) {
-      candidatePacks = [entry.pack];
-    } else {
-      candidatePacks = getPacksForObservation(entry.monsters, candidatePacks);
-    }
-  }
-
-  return candidatePacks;
+  const state = resolvePackCandidates(history);
+  return state.candidatePacks.length > 0 ? state.candidatePacks : null;
 }
 
 export function getCurrentPack(history: EncounterEntry[]): number | null {
@@ -119,3 +168,4 @@ export function getCurrentPack(history: EncounterEntry[]): number | null {
   if (!state.locked) return null;
   return state.currentPack;
 }
+
