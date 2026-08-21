@@ -1,5 +1,6 @@
 import type { EncounterEntry, MonsterCount } from "../engine/types";
 import { multisetKey } from "../engine/multiset";
+import { createId } from "../utils/id";
 
 const STORAGE_KEY = "ff6-rage-finder-state";
 
@@ -14,10 +15,6 @@ export const defaultState: AppState = {
   want: [],
   history: [],
 };
-
-export function createId(): string {
-  return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
-}
 
 function sanitizeStringArray(arr: unknown): string[] {
   if (!Array.isArray(arr)) return [];
@@ -52,13 +49,29 @@ function sanitizeHistory(history: unknown): EncounterEntry[] {
     const key = typeof entryObj.multisetKey === "string" && entryObj.multisetKey
       ? entryObj.multisetKey
       : multisetKey(monsters);
-    const resolved = Boolean(entryObj.resolved);
-    const pack = typeof entryObj.pack === "number" && Number.isInteger(entryObj.pack)
-      ? entryObj.pack
-      : undefined;
-    const slot = typeof entryObj.slot === "number" && Number.isInteger(entryObj.slot)
-      ? entryObj.slot
-      : undefined;
+
+    const packRaw = entryObj.pack;
+    const pack =
+      typeof packRaw === "number" &&
+      Number.isInteger(packRaw) &&
+      packRaw >= 1 &&
+      packRaw <= 64
+        ? packRaw
+        : undefined;
+
+    const slotRaw = entryObj.slot;
+    const slot =
+      typeof slotRaw === "number" &&
+      Number.isInteger(slotRaw) &&
+      slotRaw >= 0 &&
+      slotRaw <= 7
+        ? slotRaw
+        : undefined;
+
+    let resolved = Boolean(entryObj.resolved);
+    if (resolved && pack === undefined) {
+      resolved = false;
+    }
 
     result.push({
       id,
@@ -104,8 +117,11 @@ export function exportState(state: AppState): string {
 }
 
 export function importState(json: string): AppState {
-  const parsed = JSON.parse(json);
-  return sanitizeState(parsed);
+  try {
+    return sanitizeState(JSON.parse(json));
+  } catch {
+    return { ...defaultState };
+  }
 }
 
 export function clearHistory(state: AppState): AppState {

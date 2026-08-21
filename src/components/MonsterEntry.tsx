@@ -5,7 +5,7 @@ import {
   getValidCountsForMonster,
 } from "../engine/constraints";
 import { isCompleteMatch } from "../engine/matcher";
-import { createId } from "../storage/state";
+import { createId } from "../utils/id";
 
 interface MonsterRow {
   id: string;

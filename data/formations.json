@@ -3393,15 +3393,15 @@
     {
       "pack": 30,
       "slot": 3,
-      "label": "Tonberries x3",
+      "label": "Tonberry x3",
       "monsters": [
         {
-          "name": "Tonberries",
+          "name": "Tonberry",
           "count": 3
         }
       ],
       "empty": false,
-      "multisetKey": "Tonberries:3"
+      "multisetKey": "Tonberry:3"
     },
     {
       "pack": 30,
@@ -6947,7 +6947,6 @@
     "Suriander",
     "Templar",
     "Test Rider",
-    "Tonberries",
     "Tonberry",
     "Trapper",
     "Trillium",

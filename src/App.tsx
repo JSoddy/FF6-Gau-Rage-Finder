@@ -18,13 +18,13 @@ import { UpcomingPacks } from "./components/UpcomingPacks";
 import { MonsterEntry } from "./components/MonsterEntry";
 import {
   clearHistory,
-  createId,
   exportState,
   importState,
   loadState,
   saveState,
   type AppState,
 } from "./storage/state";
+import { createId } from "./utils/id";
 import "./app.css";
 
 function toSet(arr: string[]): Set<string> {
@@ -163,12 +163,15 @@ export default function App() {
       if (!file) return;
       const reader = new FileReader();
       reader.onload = () => {
+        const text = reader.result as string;
         try {
-          setState(importState(reader.result as string));
-          setEntryError(null);
+          JSON.parse(text);
         } catch {
           setEntryError("Invalid import file.");
+          return;
         }
+        setState(importState(text));
+        setEntryError(null);
       };
       reader.readAsText(file);
     };
@@ -204,52 +207,52 @@ export default function App() {
           </button>
         </div>
 
-      <RageTable
-        have={have}
-        want={want}
-        showOnlyWant={showOnlyWant}
-        onToggleHave={toggleHave}
-        onToggleWant={toggleWant}
-        onToggleFilter={() => setShowOnlyWant((v) => !v)}
-      />
+        <RageTable
+          have={have}
+          want={want}
+          showOnlyWant={showOnlyWant}
+          onToggleHave={toggleHave}
+          onToggleWant={toggleWant}
+          onToggleFilter={() => setShowOnlyWant((v) => !v)}
+        />
 
-      <div className="middle-row">
-        <div className="middle-row__main">
-          <EncounterHistory
-            history={position.resolvedHistory}
-            onRemoveLast={handleRemoveLast}
-          />
-          {!position.locked && (
+        <div className="middle-row">
+          <div className="middle-row__main">
+            <EncounterHistory
+              history={position.resolvedHistory}
+              onRemoveLast={handleRemoveLast}
+            />
+            {!position.locked && (
+              <MonsterEntry
+                onSubmit={handleSubmitEncounter}
+                error={entryError}
+                positionLocked={false}
+              />
+            )}
+            {!position.locked && position.candidatePacks.length > 1 && (
+              <p className="status-msg">
+                {position.candidatePacks.length} possible packs — log another
+                encounter to narrow down.
+              </p>
+            )}
+          </div>
+          <WantCountdown etas={etas} locked={position.locked} />
+        </div>
+
+        {position.locked && currentPack != null && (
+          <>
+            <UpcomingPacks
+              packs={upcoming}
+              have={have}
+              onSelectFormation={handleSelectFormation}
+            />
             <MonsterEntry
               onSubmit={handleSubmitEncounter}
               error={entryError}
-              positionLocked={false}
+              positionLocked
             />
-          )}
-          {!position.locked && position.candidatePacks.length > 1 && (
-            <p className="status-msg">
-              {position.candidatePacks.length} possible packs — log another
-              encounter to narrow down.
-            </p>
-          )}
-        </div>
-        <WantCountdown etas={etas} locked={position.locked} />
-      </div>
-
-      {position.locked && currentPack != null && (
-        <>
-          <UpcomingPacks
-            packs={upcoming}
-            have={have}
-            onSelectFormation={handleSelectFormation}
-          />
-          <MonsterEntry
-            onSubmit={handleSubmitEncounter}
-            error={entryError}
-            positionLocked
-          />
-        </>
-      )}
+          </>
+        )}
       </div>
 
       <footer className="app-footer">

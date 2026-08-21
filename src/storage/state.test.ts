@@ -1,7 +1,6 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import {
   clearHistory,
-  createId,
   defaultState,
   exportState,
   importState,
@@ -19,14 +18,6 @@ describe("state storage & sanitization", () => {
   it("returns defaultState when localStorage is empty", () => {
     const state = loadState();
     expect(state).toEqual(defaultState);
-  });
-
-  it("generates unique string ids", () => {
-    const id1 = createId();
-    const id2 = createId();
-    expect(id1).toBeTruthy();
-    expect(id2).toBeTruthy();
-    expect(id1).not.toBe(id2);
   });
 
   it("handles corrupted or invalid JSON gracefully in loadState", () => {
@@ -91,6 +82,37 @@ describe("state storage & sanitization", () => {
     expect(sanitized.history[0].multisetKey).toBe("Foper:2|Guard:1|Silver Lobo:2");
   });
 
+  it("drops out-of-range pack and slot values", () => {
+    const sanitized = sanitizeState({
+      have: [],
+      want: [],
+      history: [
+        {
+          id: "bad-pack",
+          monsters: [{ name: "Silver Lobo", count: 1 }],
+          resolved: true,
+          pack: 99,
+          slot: 0,
+        },
+        {
+          id: "bad-slot",
+          monsters: [{ name: "Harvester", count: 1 }],
+          resolved: true,
+          pack: 14,
+          slot: 8,
+        },
+      ],
+    });
+
+    expect(sanitized.history).toHaveLength(2);
+    expect(sanitized.history[0].pack).toBeUndefined();
+    expect(sanitized.history[0].slot).toBe(0);
+    expect(sanitized.history[0].resolved).toBe(false);
+    expect(sanitized.history[1].pack).toBe(14);
+    expect(sanitized.history[1].slot).toBeUndefined();
+    expect(sanitized.history[1].resolved).toBe(true);
+  });
+
   it("saves and loads state properly", () => {
     const state: AppState = {
       have: ["Silver Lobo"],
@@ -131,13 +153,17 @@ describe("state storage & sanitization", () => {
     expect(imported).toEqual(state);
   });
 
-  it("handles corrupted import JSON string gracefully", () => {
-    const malformed = JSON.stringify({
+  it("returns defaultState for invalid import JSON", () => {
+    expect(importState("{ not json")).toEqual(defaultState);
+  });
+
+  it("sanitizes incomplete but valid import JSON", () => {
+    const incomplete = JSON.stringify({
       have: ["Silver Lobo"],
       history: [{ monsters: [{ name: "Guard", count: 1 }] }],
     });
 
-    const imported = importState(malformed);
+    const imported = importState(incomplete);
     expect(imported.have).toEqual(["Silver Lobo"]);
     expect(imported.want).toEqual([]);
     expect(imported.history).toHaveLength(1);
