@@ -182,7 +182,7 @@ export default function App() {
     <div className="app">
       <header className="app-header">
         <img
-          src="/assets/images/gau.webp"
+          src={`${import.meta.env.BASE_URL}assets/images/gau.webp`}
           alt="Gau"
           className="app-header__gau"
         />
