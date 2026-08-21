@@ -1,0 +1,6982 @@
+{
+  "formations": [
+    {
+      "pack": 1,
+      "slot": 0,
+      "label": "Silver Lobo",
+      "monsters": [
+        {
+          "name": "Silver Lobo",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Silver Lobo:1"
+    },
+    {
+      "pack": 1,
+      "slot": 1,
+      "label": "Silver Lobo x2",
+      "monsters": [
+        {
+          "name": "Silver Lobo",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Silver Lobo:2"
+    },
+    {
+      "pack": 1,
+      "slot": 2,
+      "label": "Guard x2",
+      "monsters": [
+        {
+          "name": "Guard",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Guard:2"
+    },
+    {
+      "pack": 1,
+      "slot": 3,
+      "label": "Foper x2, Urok",
+      "monsters": [
+        {
+          "name": "Foper",
+          "count": 2
+        },
+        {
+          "name": "Urok",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Foper:2|Urok:1"
+    },
+    {
+      "pack": 1,
+      "slot": 4,
+      "label": "Silver Lobo x2, Guard Leader",
+      "monsters": [
+        {
+          "name": "Silver Lobo",
+          "count": 2
+        },
+        {
+          "name": "Guard Leader",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Guard Leader:1|Silver Lobo:2"
+    },
+    {
+      "pack": 1,
+      "slot": 5,
+      "label": "Hornet x2, Foper x3",
+      "monsters": [
+        {
+          "name": "Hornet",
+          "count": 2
+        },
+        {
+          "name": "Foper",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Foper:3|Hornet:2"
+    },
+    {
+      "pack": 1,
+      "slot": 6,
+      "label": "Leaf Bunny",
+      "monsters": [
+        {
+          "name": "Leaf Bunny",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Leaf Bunny:1"
+    },
+    {
+      "pack": 1,
+      "slot": 7,
+      "label": "Leaf Bunny x2, Darkwind",
+      "monsters": [
+        {
+          "name": "Leaf Bunny",
+          "count": 2
+        },
+        {
+          "name": "Darkwind",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Darkwind:1|Leaf Bunny:2"
+    },
+    {
+      "pack": 2,
+      "slot": 0,
+      "label": "Leaf Bunny x2, Darkwind x2",
+      "monsters": [
+        {
+          "name": "Leaf Bunny",
+          "count": 2
+        },
+        {
+          "name": "Darkwind",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Darkwind:2|Leaf Bunny:2"
+    },
+    {
+      "pack": 2,
+      "slot": 1,
+      "label": "Sand Ray, Alacran x3",
+      "monsters": [
+        {
+          "name": "Sand Ray",
+          "count": 1
+        },
+        {
+          "name": "Alacran",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Alacran:3|Sand Ray:1"
+    },
+    {
+      "pack": 2,
+      "slot": 2,
+      "label": "Sand Ray x2",
+      "monsters": [
+        {
+          "name": "Sand Ray",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Sand Ray:2"
+    },
+    {
+      "pack": 2,
+      "slot": 3,
+      "label": "Alacran x3",
+      "monsters": [
+        {
+          "name": "Alacran",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Alacran:3"
+    },
+    {
+      "pack": 2,
+      "slot": 4,
+      "label": "Sand Ray, Alacran x2",
+      "monsters": [
+        {
+          "name": "Sand Ray",
+          "count": 1
+        },
+        {
+          "name": "Alacran",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Alacran:2|Sand Ray:1"
+    },
+    {
+      "pack": 2,
+      "slot": 5,
+      "label": "Hornet x2",
+      "monsters": [
+        {
+          "name": "Hornet",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Hornet:2"
+    },
+    {
+      "pack": 2,
+      "slot": 6,
+      "label": "Wererat x3",
+      "monsters": [
+        {
+          "name": "Wererat",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Wererat:3"
+    },
+    {
+      "pack": 2,
+      "slot": 7,
+      "label": "Hornet, Urok x2",
+      "monsters": [
+        {
+          "name": "Hornet",
+          "count": 1
+        },
+        {
+          "name": "Urok",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Hornet:1|Urok:2"
+    },
+    {
+      "pack": 3,
+      "slot": 0,
+      "label": "Gorgias x2",
+      "monsters": [
+        {
+          "name": "Gorgias",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gorgias:2"
+    },
+    {
+      "pack": 3,
+      "slot": 1,
+      "label": "Megalodoth, Silver Lobo",
+      "monsters": [
+        {
+          "name": "Megalodoth",
+          "count": 1
+        },
+        {
+          "name": "Silver Lobo",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Megalodoth:1|Silver Lobo:1"
+    },
+    {
+      "pack": 3,
+      "slot": 2,
+      "label": "Urok x3",
+      "monsters": [
+        {
+          "name": "Urok",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Urok:3"
+    },
+    {
+      "pack": 3,
+      "slot": 3,
+      "label": "Belmodar",
+      "monsters": [
+        {
+          "name": "Belmodar",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Belmodar:1"
+    },
+    {
+      "pack": 3,
+      "slot": 4,
+      "label": "Belmodar, Mu x2",
+      "monsters": [
+        {
+          "name": "Belmodar",
+          "count": 1
+        },
+        {
+          "name": "Mu",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Belmodar:1|Mu:2"
+    },
+    {
+      "pack": 3,
+      "slot": 5,
+      "label": "Mu x2, Unseelie",
+      "monsters": [
+        {
+          "name": "Mu",
+          "count": 2
+        },
+        {
+          "name": "Unseelie",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Mu:2|Unseelie:1"
+    },
+    {
+      "pack": 3,
+      "slot": 6,
+      "label": "Belmodar, Unseelie, Mu x2",
+      "monsters": [
+        {
+          "name": "Belmodar",
+          "count": 1
+        },
+        {
+          "name": "Unseelie",
+          "count": 1
+        },
+        {
+          "name": "Mu",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Belmodar:1|Mu:2|Unseelie:1"
+    },
+    {
+      "pack": 3,
+      "slot": 7,
+      "label": "Unseelie x2",
+      "monsters": [
+        {
+          "name": "Unseelie",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Unseelie:2"
+    },
+    {
+      "pack": 4,
+      "slot": 0,
+      "label": "Mu x4",
+      "monsters": [
+        {
+          "name": "Mu",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Mu:4"
+    },
+    {
+      "pack": 4,
+      "slot": 1,
+      "label": "Imperial Soldier x2, Magitek Armor",
+      "monsters": [
+        {
+          "name": "Imperial Soldier",
+          "count": 2
+        },
+        {
+          "name": "Magitek Armor",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Imperial Soldier:2|Magitek Armor:1"
+    },
+    {
+      "pack": 4,
+      "slot": 2,
+      "label": "Bandit, Spritzer",
+      "monsters": [
+        {
+          "name": "Bandit",
+          "count": 1
+        },
+        {
+          "name": "Spritzer",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bandit:1|Spritzer:1"
+    },
+    {
+      "pack": 4,
+      "slot": 3,
+      "label": "Magitek Armor",
+      "monsters": [
+        {
+          "name": "Magitek Armor",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Magitek Armor:1"
+    },
+    {
+      "pack": 4,
+      "slot": 4,
+      "label": "Trillium, Gorgias, Cirpius x2",
+      "monsters": [
+        {
+          "name": "Trillium",
+          "count": 1
+        },
+        {
+          "name": "Gorgias",
+          "count": 1
+        },
+        {
+          "name": "Cirpius",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cirpius:2|Gorgias:1|Trillium:1"
+    },
+    {
+      "pack": 4,
+      "slot": 5,
+      "label": "Cirpius x3",
+      "monsters": [
+        {
+          "name": "Cirpius",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cirpius:3"
+    },
+    {
+      "pack": 4,
+      "slot": 6,
+      "label": "Trillium x2",
+      "monsters": [
+        {
+          "name": "Trillium",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Trillium:2"
+    },
+    {
+      "pack": 4,
+      "slot": 7,
+      "label": "Gorgias, Cirpius x3",
+      "monsters": [
+        {
+          "name": "Gorgias",
+          "count": 1
+        },
+        {
+          "name": "Cirpius",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cirpius:3|Gorgias:1"
+    },
+    {
+      "pack": 5,
+      "slot": 0,
+      "label": "Zaghrem x2",
+      "monsters": [
+        {
+          "name": "Zaghrem",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Zaghrem:2"
+    },
+    {
+      "pack": 5,
+      "slot": 1,
+      "label": "Zaghrem, Trillium, Spritzer x2",
+      "monsters": [
+        {
+          "name": "Zaghrem",
+          "count": 1
+        },
+        {
+          "name": "Trillium",
+          "count": 1
+        },
+        {
+          "name": "Spritzer",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Spritzer:2|Trillium:1|Zaghrem:1"
+    },
+    {
+      "pack": 5,
+      "slot": 2,
+      "label": "Magitek Armor x2",
+      "monsters": [
+        {
+          "name": "Magitek Armor",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Magitek Armor:2"
+    },
+    {
+      "pack": 5,
+      "slot": 3,
+      "label": "Lesser Lopros x2",
+      "monsters": [
+        {
+          "name": "Lesser Lopros",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Lesser Lopros:2"
+    },
+    {
+      "pack": 5,
+      "slot": 4,
+      "label": "Zombie Dragon x2",
+      "monsters": [
+        {
+          "name": "Zombie Dragon",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Zombie Dragon:2"
+    },
+    {
+      "pack": 5,
+      "slot": 5,
+      "label": "Nautiloid, Exocite, Lesser Lopros",
+      "monsters": [
+        {
+          "name": "Nautiloid",
+          "count": 1
+        },
+        {
+          "name": "Exocite",
+          "count": 1
+        },
+        {
+          "name": "Lesser Lopros",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Exocite:1|Lesser Lopros:1|Nautiloid:1"
+    },
+    {
+      "pack": 5,
+      "slot": 6,
+      "label": "Nautiloid, Exocite",
+      "monsters": [
+        {
+          "name": "Nautiloid",
+          "count": 1
+        },
+        {
+          "name": "Exocite",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Exocite:1|Nautiloid:1"
+    },
+    {
+      "pack": 5,
+      "slot": 7,
+      "label": "Lesser Lopros, Exocite x2",
+      "monsters": [
+        {
+          "name": "Lesser Lopros",
+          "count": 1
+        },
+        {
+          "name": "Exocite",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Exocite:2|Lesser Lopros:1"
+    },
+    {
+      "pack": 6,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 6,
+      "slot": 1,
+      "label": "Silver Lobo, Guard x2",
+      "monsters": [
+        {
+          "name": "Silver Lobo",
+          "count": 1
+        },
+        {
+          "name": "Guard",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Guard:2|Silver Lobo:1"
+    },
+    {
+      "pack": 6,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 6,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 6,
+      "slot": 4,
+      "label": "Wererat, Bandit",
+      "monsters": [
+        {
+          "name": "Wererat",
+          "count": 1
+        },
+        {
+          "name": "Bandit",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bandit:1|Wererat:1"
+    },
+    {
+      "pack": 6,
+      "slot": 5,
+      "label": "Wererat x2",
+      "monsters": [
+        {
+          "name": "Wererat",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Wererat:2"
+    },
+    {
+      "pack": 6,
+      "slot": 6,
+      "label": "Doberman x2",
+      "monsters": [
+        {
+          "name": "Doberman",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Doberman:2"
+    },
+    {
+      "pack": 6,
+      "slot": 7,
+      "label": "Actinian x3",
+      "monsters": [
+        {
+          "name": "Actinian",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Actinian:3"
+    },
+    {
+      "pack": 7,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 7,
+      "slot": 1,
+      "label": "Stray Cat x3",
+      "monsters": [
+        {
+          "name": "Stray Cat",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Stray Cat:3"
+    },
+    {
+      "pack": 7,
+      "slot": 2,
+      "label": "Nettlehopper x2, Stray Cat x2",
+      "monsters": [
+        {
+          "name": "Nettlehopper",
+          "count": 2
+        },
+        {
+          "name": "Stray Cat",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Nettlehopper:2|Stray Cat:2"
+    },
+    {
+      "pack": 7,
+      "slot": 3,
+      "label": "Nettlehopper x3",
+      "monsters": [
+        {
+          "name": "Nettlehopper",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Nettlehopper:3"
+    },
+    {
+      "pack": 7,
+      "slot": 4,
+      "label": "Chippirabbit x5",
+      "monsters": [
+        {
+          "name": "Chippirabbit",
+          "count": 5
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Chippirabbit:5"
+    },
+    {
+      "pack": 7,
+      "slot": 5,
+      "label": "Aepyornis",
+      "monsters": [
+        {
+          "name": "Aepyornis",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Aepyornis:1"
+    },
+    {
+      "pack": 7,
+      "slot": 6,
+      "label": "Aepyornis x2, Stray Cat",
+      "monsters": [
+        {
+          "name": "Aepyornis",
+          "count": 2
+        },
+        {
+          "name": "Stray Cat",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Aepyornis:2|Stray Cat:1"
+    },
+    {
+      "pack": 7,
+      "slot": 7,
+      "label": "Aepyornis, Chippirabbit x2",
+      "monsters": [
+        {
+          "name": "Aepyornis",
+          "count": 1
+        },
+        {
+          "name": "Chippirabbit",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Aepyornis:1|Chippirabbit:2"
+    },
+    {
+      "pack": 8,
+      "slot": 0,
+      "label": "Chippirabbit x3",
+      "monsters": [
+        {
+          "name": "Chippirabbit",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Chippirabbit:3"
+    },
+    {
+      "pack": 8,
+      "slot": 1,
+      "label": "Aepyornis, Stray Cat, Nettlehopper x2",
+      "monsters": [
+        {
+          "name": "Aepyornis",
+          "count": 1
+        },
+        {
+          "name": "Stray Cat",
+          "count": 1
+        },
+        {
+          "name": "Nettlehopper",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Aepyornis:1|Nettlehopper:2|Stray Cat:1"
+    },
+    {
+      "pack": 8,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 8,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 8,
+      "slot": 4,
+      "label": "Imperial Soldier x4",
+      "monsters": [
+        {
+          "name": "Imperial Soldier",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Imperial Soldier:4"
+    },
+    {
+      "pack": 8,
+      "slot": 5,
+      "label": "Satellite",
+      "monsters": [
+        {
+          "name": "Satellite",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Satellite:1"
+    },
+    {
+      "pack": 8,
+      "slot": 6,
+      "label": "Doberman x3",
+      "monsters": [
+        {
+          "name": "Doberman",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Doberman:3"
+    },
+    {
+      "pack": 8,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 9,
+      "slot": 0,
+      "label": "Heavy Armor",
+      "monsters": [
+        {
+          "name": "Heavy Armor",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Heavy Armor:1"
+    },
+    {
+      "pack": 9,
+      "slot": 1,
+      "label": "Ghost",
+      "monsters": [
+        {
+          "name": "Ghost",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Ghost:1"
+    },
+    {
+      "pack": 9,
+      "slot": 2,
+      "label": "Ghost x3",
+      "monsters": [
+        {
+          "name": "Ghost",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Ghost:3"
+    },
+    {
+      "pack": 9,
+      "slot": 3,
+      "label": "Actinian x3, Aspiran x2",
+      "monsters": [
+        {
+          "name": "Actinian",
+          "count": 3
+        },
+        {
+          "name": "Aspiran",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Actinian:3|Aspiran:2"
+    },
+    {
+      "pack": 9,
+      "slot": 4,
+      "label": "Ghost, Poplium x2",
+      "monsters": [
+        {
+          "name": "Ghost",
+          "count": 1
+        },
+        {
+          "name": "Poplium",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Ghost:1|Poplium:2"
+    },
+    {
+      "pack": 9,
+      "slot": 5,
+      "label": "Ghost x2, Poplium x3",
+      "monsters": [
+        {
+          "name": "Ghost",
+          "count": 2
+        },
+        {
+          "name": "Poplium",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Ghost:2|Poplium:3"
+    },
+    {
+      "pack": 9,
+      "slot": 6,
+      "label": "Angel Whisper x2, Cloud",
+      "monsters": [
+        {
+          "name": "Angel Whisper",
+          "count": 2
+        },
+        {
+          "name": "Cloud",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Angel Whisper:2|Cloud:1"
+    },
+    {
+      "pack": 9,
+      "slot": 7,
+      "label": "Spritzer x2",
+      "monsters": [
+        {
+          "name": "Spritzer",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Spritzer:2"
+    },
+    {
+      "pack": 10,
+      "slot": 0,
+      "label": "Bomb x2, Cloud x2",
+      "monsters": [
+        {
+          "name": "Bomb",
+          "count": 2
+        },
+        {
+          "name": "Cloud",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bomb:2|Cloud:2"
+    },
+    {
+      "pack": 10,
+      "slot": 1,
+      "label": "Provoker x2, Lich x2",
+      "monsters": [
+        {
+          "name": "Provoker",
+          "count": 2
+        },
+        {
+          "name": "Lich",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Lich:2|Provoker:2"
+    },
+    {
+      "pack": 10,
+      "slot": 2,
+      "label": "Angel Whisper x4",
+      "monsters": [
+        {
+          "name": "Angel Whisper",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Angel Whisper:4"
+    },
+    {
+      "pack": 10,
+      "slot": 3,
+      "label": "Oversoul x2",
+      "monsters": [
+        {
+          "name": "Oversoul",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Oversoul:2"
+    },
+    {
+      "pack": 10,
+      "slot": 4,
+      "label": "Bomb x3",
+      "monsters": [
+        {
+          "name": "Bomb",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bomb:3"
+    },
+    {
+      "pack": 10,
+      "slot": 5,
+      "label": "Bomb",
+      "monsters": [
+        {
+          "name": "Bomb",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bomb:1"
+    },
+    {
+      "pack": 10,
+      "slot": 6,
+      "label": "Oversoul, Living Dead x2",
+      "monsters": [
+        {
+          "name": "Oversoul",
+          "count": 1
+        },
+        {
+          "name": "Living Dead",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Living Dead:2|Oversoul:1"
+    },
+    {
+      "pack": 10,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 11,
+      "slot": 0,
+      "label": "Angel Whisper, Living Dead, Cloud x2",
+      "monsters": [
+        {
+          "name": "Angel Whisper",
+          "count": 1
+        },
+        {
+          "name": "Living Dead",
+          "count": 1
+        },
+        {
+          "name": "Cloud",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Angel Whisper:1|Cloud:2|Living Dead:1"
+    },
+    {
+      "pack": 11,
+      "slot": 1,
+      "label": "Angel Whisper, Cloud x3",
+      "monsters": [
+        {
+          "name": "Angel Whisper",
+          "count": 1
+        },
+        {
+          "name": "Cloud",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Angel Whisper:1|Cloud:3"
+    },
+    {
+      "pack": 11,
+      "slot": 2,
+      "label": "Anguiform",
+      "monsters": [
+        {
+          "name": "Anguiform",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Anguiform:1"
+    },
+    {
+      "pack": 11,
+      "slot": 3,
+      "label": "Anguiform x2",
+      "monsters": [
+        {
+          "name": "Anguiform",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Anguiform:2"
+    },
+    {
+      "pack": 11,
+      "slot": 4,
+      "label": "Megalodoth x2, Guard x2",
+      "monsters": [
+        {
+          "name": "Megalodoth",
+          "count": 2
+        },
+        {
+          "name": "Guard",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Guard:2|Megalodoth:2"
+    },
+    {
+      "pack": 11,
+      "slot": 5,
+      "label": "Living Dead x3",
+      "monsters": [
+        {
+          "name": "Living Dead",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Living Dead:3"
+    },
+    {
+      "pack": 11,
+      "slot": 6,
+      "label": "Anguiform, Actinian, Aspiran",
+      "monsters": [
+        {
+          "name": "Anguiform",
+          "count": 1
+        },
+        {
+          "name": "Actinian",
+          "count": 1
+        },
+        {
+          "name": "Aspiran",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Actinian:1|Anguiform:1|Aspiran:1"
+    },
+    {
+      "pack": 11,
+      "slot": 7,
+      "label": "Hell's Rider",
+      "monsters": [
+        {
+          "name": "Hell's Rider",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Hell's Rider:1"
+    },
+    {
+      "pack": 12,
+      "slot": 0,
+      "label": "Heavy Armor, Corporal x2",
+      "monsters": [
+        {
+          "name": "Heavy Armor",
+          "count": 1
+        },
+        {
+          "name": "Corporal",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Corporal:2|Heavy Armor:1"
+    },
+    {
+      "pack": 12,
+      "slot": 1,
+      "label": "Fidor, Corporal",
+      "monsters": [
+        {
+          "name": "Fidor",
+          "count": 1
+        },
+        {
+          "name": "Corporal",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Corporal:1|Fidor:1"
+    },
+    {
+      "pack": 12,
+      "slot": 2,
+      "label": "Angel Whisper",
+      "monsters": [
+        {
+          "name": "Angel Whisper",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Angel Whisper:1"
+    },
+    {
+      "pack": 12,
+      "slot": 3,
+      "label": "Corporal x4",
+      "monsters": [
+        {
+          "name": "Corporal",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Corporal:4"
+    },
+    {
+      "pack": 12,
+      "slot": 4,
+      "label": "Hunting Hound, Corporal x2",
+      "monsters": [
+        {
+          "name": "Hunting Hound",
+          "count": 1
+        },
+        {
+          "name": "Corporal",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Corporal:2|Hunting Hound:1"
+    },
+    {
+      "pack": 12,
+      "slot": 5,
+      "label": "Fossil Dragon",
+      "monsters": [
+        {
+          "name": "Fossil Dragon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Fossil Dragon:1"
+    },
+    {
+      "pack": 12,
+      "slot": 6,
+      "label": "Bloodfang x2",
+      "monsters": [
+        {
+          "name": "Bloodfang",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bloodfang:2"
+    },
+    {
+      "pack": 12,
+      "slot": 7,
+      "label": "Paraladia, Vulture, Iron Fist",
+      "monsters": [
+        {
+          "name": "Paraladia",
+          "count": 1
+        },
+        {
+          "name": "Vulture",
+          "count": 1
+        },
+        {
+          "name": "Iron Fist",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Iron Fist:1|Paraladia:1|Vulture:1"
+    },
+    {
+      "pack": 13,
+      "slot": 0,
+      "label": "Iron Fist x2, Rock Wasp x2",
+      "monsters": [
+        {
+          "name": "Iron Fist",
+          "count": 2
+        },
+        {
+          "name": "Rock Wasp",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Iron Fist:2|Rock Wasp:2"
+    },
+    {
+      "pack": 13,
+      "slot": 1,
+      "label": "Bloodfang x2, Vulture",
+      "monsters": [
+        {
+          "name": "Bloodfang",
+          "count": 2
+        },
+        {
+          "name": "Vulture",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bloodfang:2|Vulture:1"
+    },
+    {
+      "pack": 13,
+      "slot": 2,
+      "label": "Paraladia x2, Rock Wasp x3",
+      "monsters": [
+        {
+          "name": "Paraladia",
+          "count": 2
+        },
+        {
+          "name": "Rock Wasp",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Paraladia:2|Rock Wasp:3"
+    },
+    {
+      "pack": 13,
+      "slot": 3,
+      "label": "Vulture x2",
+      "monsters": [
+        {
+          "name": "Vulture",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Vulture:2"
+    },
+    {
+      "pack": 13,
+      "slot": 4,
+      "label": "Vulture, Iron Fist",
+      "monsters": [
+        {
+          "name": "Vulture",
+          "count": 1
+        },
+        {
+          "name": "Iron Fist",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Iron Fist:1|Vulture:1"
+    },
+    {
+      "pack": 13,
+      "slot": 5,
+      "label": "Rock Wasp x4",
+      "monsters": [
+        {
+          "name": "Rock Wasp",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Rock Wasp:4"
+    },
+    {
+      "pack": 13,
+      "slot": 6,
+      "label": "Hill Gigas",
+      "monsters": [
+        {
+          "name": "Hill Gigas",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Hill Gigas:1"
+    },
+    {
+      "pack": 13,
+      "slot": 7,
+      "label": "Crawler",
+      "monsters": [
+        {
+          "name": "Crawler",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Crawler:1"
+    },
+    {
+      "pack": 14,
+      "slot": 0,
+      "label": "Gobbledygook x4",
+      "monsters": [
+        {
+          "name": "Gobbledygook",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gobbledygook:4"
+    },
+    {
+      "pack": 14,
+      "slot": 1,
+      "label": "Veil Dancer",
+      "monsters": [
+        {
+          "name": "Veil Dancer",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Veil Dancer:1"
+    },
+    {
+      "pack": 14,
+      "slot": 2,
+      "label": "Veil Dancer, Gobbledygook x3",
+      "monsters": [
+        {
+          "name": "Veil Dancer",
+          "count": 1
+        },
+        {
+          "name": "Gobbledygook",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gobbledygook:3|Veil Dancer:1"
+    },
+    {
+      "pack": 14,
+      "slot": 3,
+      "label": "Harvester",
+      "monsters": [
+        {
+          "name": "Harvester",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Harvester:1"
+    },
+    {
+      "pack": 14,
+      "slot": 4,
+      "label": "Veil Dancer, Harvester x2",
+      "monsters": [
+        {
+          "name": "Veil Dancer",
+          "count": 1
+        },
+        {
+          "name": "Harvester",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Harvester:2|Veil Dancer:1"
+    },
+    {
+      "pack": 14,
+      "slot": 5,
+      "label": "Harvester, Gobbledygook x2",
+      "monsters": [
+        {
+          "name": "Harvester",
+          "count": 1
+        },
+        {
+          "name": "Gobbledygook",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gobbledygook:2|Harvester:1"
+    },
+    {
+      "pack": 14,
+      "slot": 6,
+      "label": "Hill Gigas, Harvester",
+      "monsters": [
+        {
+          "name": "Hill Gigas",
+          "count": 1
+        },
+        {
+          "name": "Harvester",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Harvester:1|Hill Gigas:1"
+    },
+    {
+      "pack": 14,
+      "slot": 7,
+      "label": "Magna Roader (Purple)",
+      "monsters": [
+        {
+          "name": "Magna Roader (Purple)",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Magna Roader (Purple):1"
+    },
+    {
+      "pack": 15,
+      "slot": 0,
+      "label": "Goetia, Stunner x2",
+      "monsters": [
+        {
+          "name": "Goetia",
+          "count": 1
+        },
+        {
+          "name": "Stunner",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Goetia:1|Stunner:2"
+    },
+    {
+      "pack": 15,
+      "slot": 1,
+      "label": "Stunner x3, Goetia x2",
+      "monsters": [
+        {
+          "name": "Stunner",
+          "count": 3
+        },
+        {
+          "name": "Goetia",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Goetia:2|Stunner:3"
+    },
+    {
+      "pack": 15,
+      "slot": 2,
+      "label": "Crawler x4",
+      "monsters": [
+        {
+          "name": "Crawler",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Crawler:4"
+    },
+    {
+      "pack": 15,
+      "slot": 3,
+      "label": "Belzecue x2, Sergeant x2",
+      "monsters": [
+        {
+          "name": "Belzecue",
+          "count": 2
+        },
+        {
+          "name": "Sergeant",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Belzecue:2|Sergeant:2"
+    },
+    {
+      "pack": 15,
+      "slot": 4,
+      "label": "Belzecue x2, Sergeant",
+      "monsters": [
+        {
+          "name": "Belzecue",
+          "count": 2
+        },
+        {
+          "name": "Sergeant",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Belzecue:2|Sergeant:1"
+    },
+    {
+      "pack": 15,
+      "slot": 5,
+      "label": "Magna Roader (Purple), Magna Roader (Red)",
+      "monsters": [
+        {
+          "name": "Magna Roader (Purple)",
+          "count": 1
+        },
+        {
+          "name": "Magna Roader (Red)",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Magna Roader (Purple):1|Magna Roader (Red):1"
+    },
+    {
+      "pack": 15,
+      "slot": 6,
+      "label": "Trapper x3",
+      "monsters": [
+        {
+          "name": "Trapper",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Trapper:3"
+    },
+    {
+      "pack": 15,
+      "slot": 7,
+      "label": "General x2",
+      "monsters": [
+        {
+          "name": "General",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "General:2"
+    },
+    {
+      "pack": 16,
+      "slot": 0,
+      "label": "General, Onion Knight x2",
+      "monsters": [
+        {
+          "name": "General",
+          "count": 1
+        },
+        {
+          "name": "Onion Knight",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "General:1|Onion Knight:2"
+    },
+    {
+      "pack": 16,
+      "slot": 1,
+      "label": "Onion Knight x4",
+      "monsters": [
+        {
+          "name": "Onion Knight",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Onion Knight:4"
+    },
+    {
+      "pack": 16,
+      "slot": 2,
+      "label": "Chaser, Trapper x3",
+      "monsters": [
+        {
+          "name": "Chaser",
+          "count": 1
+        },
+        {
+          "name": "Trapper",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Chaser:1|Trapper:3"
+    },
+    {
+      "pack": 16,
+      "slot": 3,
+      "label": "Chaser, Onion Knight x3",
+      "monsters": [
+        {
+          "name": "Chaser",
+          "count": 1
+        },
+        {
+          "name": "Onion Knight",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Chaser:1|Onion Knight:3"
+    },
+    {
+      "pack": 16,
+      "slot": 4,
+      "label": "Lenergia",
+      "monsters": [
+        {
+          "name": "Lenergia",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Lenergia:1"
+    },
+    {
+      "pack": 16,
+      "slot": 5,
+      "label": "Commander x3",
+      "monsters": [
+        {
+          "name": "Commander",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Commander:3"
+    },
+    {
+      "pack": 16,
+      "slot": 6,
+      "label": "Death Warden",
+      "monsters": [
+        {
+          "name": "Death Warden",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Death Warden:1"
+    },
+    {
+      "pack": 16,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 17,
+      "slot": 0,
+      "label": "Lukhavi x2",
+      "monsters": [
+        {
+          "name": "Lukhavi",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Lukhavi:2"
+    },
+    {
+      "pack": 17,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 17,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 17,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 17,
+      "slot": 4,
+      "label": "Murussu, Baalzephon",
+      "monsters": [
+        {
+          "name": "Murussu",
+          "count": 1
+        },
+        {
+          "name": "Baalzephon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Baalzephon:1|Murussu:1"
+    },
+    {
+      "pack": 17,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 17,
+      "slot": 6,
+      "label": "Desert Hare x3",
+      "monsters": [
+        {
+          "name": "Desert Hare",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Desert Hare:3"
+    },
+    {
+      "pack": 17,
+      "slot": 7,
+      "label": "Balloon",
+      "monsters": [
+        {
+          "name": "Balloon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Balloon:1"
+    },
+    {
+      "pack": 18,
+      "slot": 0,
+      "label": "Bomb x6",
+      "monsters": [
+        {
+          "name": "Bomb",
+          "count": 6
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bomb:6"
+    },
+    {
+      "pack": 18,
+      "slot": 1,
+      "label": "Io",
+      "monsters": [
+        {
+          "name": "Io",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Io:1"
+    },
+    {
+      "pack": 18,
+      "slot": 2,
+      "label": "Cancer x3",
+      "monsters": [
+        {
+          "name": "Cancer",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cancer:3"
+    },
+    {
+      "pack": 18,
+      "slot": 3,
+      "label": "Fossil Dragon x2",
+      "monsters": [
+        {
+          "name": "Fossil Dragon",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Fossil Dragon:2"
+    },
+    {
+      "pack": 18,
+      "slot": 4,
+      "label": "Fossil Dragon, Bug x3",
+      "monsters": [
+        {
+          "name": "Fossil Dragon",
+          "count": 1
+        },
+        {
+          "name": "Bug",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bug:3|Fossil Dragon:1"
+    },
+    {
+      "pack": 18,
+      "slot": 5,
+      "label": "Bug x3",
+      "monsters": [
+        {
+          "name": "Bug",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bug:3"
+    },
+    {
+      "pack": 18,
+      "slot": 6,
+      "label": "Bug x6",
+      "monsters": [
+        {
+          "name": "Bug",
+          "count": 6
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bug:6"
+    },
+    {
+      "pack": 18,
+      "slot": 7,
+      "label": "Don x2",
+      "monsters": [
+        {
+          "name": "Don",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Don:2"
+    },
+    {
+      "pack": 19,
+      "slot": 0,
+      "label": "Don, Wyvern x2",
+      "monsters": [
+        {
+          "name": "Don",
+          "count": 1
+        },
+        {
+          "name": "Wyvern",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Don:1|Wyvern:2"
+    },
+    {
+      "pack": 19,
+      "slot": 1,
+      "label": "Don, Wyvern, Litwor Chicken x2",
+      "monsters": [
+        {
+          "name": "Don",
+          "count": 1
+        },
+        {
+          "name": "Wyvern",
+          "count": 1
+        },
+        {
+          "name": "Litwor Chicken",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Don:1|Litwor Chicken:2|Wyvern:1"
+    },
+    {
+      "pack": 19,
+      "slot": 2,
+      "label": "Grasswyrm x3",
+      "monsters": [
+        {
+          "name": "Grasswyrm",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Grasswyrm:3"
+    },
+    {
+      "pack": 19,
+      "slot": 3,
+      "label": "Don, Joker",
+      "monsters": [
+        {
+          "name": "Don",
+          "count": 1
+        },
+        {
+          "name": "Joker",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Don:1|Joker:1"
+    },
+    {
+      "pack": 19,
+      "slot": 4,
+      "label": "Joker x3",
+      "monsters": [
+        {
+          "name": "Joker",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Joker:3"
+    },
+    {
+      "pack": 19,
+      "slot": 5,
+      "label": "Litwor Chicken x5",
+      "monsters": [
+        {
+          "name": "Litwor Chicken",
+          "count": 5
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Litwor Chicken:5"
+    },
+    {
+      "pack": 19,
+      "slot": 6,
+      "label": "Zombie Dragon",
+      "monsters": [
+        {
+          "name": "Zombie Dragon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Zombie Dragon:1"
+    },
+    {
+      "pack": 19,
+      "slot": 7,
+      "label": "Zombie Dragon, Outcast x2",
+      "monsters": [
+        {
+          "name": "Zombie Dragon",
+          "count": 1
+        },
+        {
+          "name": "Outcast",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Outcast:2|Zombie Dragon:1"
+    },
+    {
+      "pack": 20,
+      "slot": 0,
+      "label": "Outcast x3",
+      "monsters": [
+        {
+          "name": "Outcast",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Outcast:3"
+    },
+    {
+      "pack": 20,
+      "slot": 1,
+      "label": "Provoker x2",
+      "monsters": [
+        {
+          "name": "Provoker",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Provoker:2"
+    },
+    {
+      "pack": 20,
+      "slot": 2,
+      "label": "Antares x3",
+      "monsters": [
+        {
+          "name": "Antares",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Antares:3"
+    },
+    {
+      "pack": 20,
+      "slot": 3,
+      "label": "Lich, Provoker, Antares",
+      "monsters": [
+        {
+          "name": "Lich",
+          "count": 1
+        },
+        {
+          "name": "Provoker",
+          "count": 1
+        },
+        {
+          "name": "Antares",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Antares:1|Lich:1|Provoker:1"
+    },
+    {
+      "pack": 20,
+      "slot": 4,
+      "label": "Lich x3",
+      "monsters": [
+        {
+          "name": "Lich",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Lich:3"
+    },
+    {
+      "pack": 20,
+      "slot": 5,
+      "label": "Imperial Elite x3",
+      "monsters": [
+        {
+          "name": "Imperial Elite",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Imperial Elite:3"
+    },
+    {
+      "pack": 20,
+      "slot": 6,
+      "label": "Balloon x3",
+      "monsters": [
+        {
+          "name": "Balloon",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Balloon:3"
+    },
+    {
+      "pack": 20,
+      "slot": 7,
+      "label": "Balloon x6",
+      "monsters": [
+        {
+          "name": "Balloon",
+          "count": 6
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Balloon:6"
+    },
+    {
+      "pack": 21,
+      "slot": 0,
+      "label": "Briareus",
+      "monsters": [
+        {
+          "name": "Briareus",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Briareus:1"
+    },
+    {
+      "pack": 21,
+      "slot": 1,
+      "label": "Chimera",
+      "monsters": [
+        {
+          "name": "Chimera",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Chimera:1"
+    },
+    {
+      "pack": 21,
+      "slot": 2,
+      "label": "Devourer, Briareus",
+      "monsters": [
+        {
+          "name": "Devourer",
+          "count": 1
+        },
+        {
+          "name": "Briareus",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Briareus:1|Devourer:1"
+    },
+    {
+      "pack": 21,
+      "slot": 3,
+      "label": "Devourer x3",
+      "monsters": [
+        {
+          "name": "Devourer",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Devourer:3"
+    },
+    {
+      "pack": 21,
+      "slot": 4,
+      "label": "Adamankary, Bonnacon x2",
+      "monsters": [
+        {
+          "name": "Adamankary",
+          "count": 1
+        },
+        {
+          "name": "Bonnacon",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Adamankary:1|Bonnacon:2"
+    },
+    {
+      "pack": 21,
+      "slot": 5,
+      "label": "Adamankary x2",
+      "monsters": [
+        {
+          "name": "Adamankary",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Adamankary:2"
+    },
+    {
+      "pack": 21,
+      "slot": 6,
+      "label": "Bonnacon x5",
+      "monsters": [
+        {
+          "name": "Bonnacon",
+          "count": 5
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bonnacon:5"
+    },
+    {
+      "pack": 21,
+      "slot": 7,
+      "label": "Mandrake x3",
+      "monsters": [
+        {
+          "name": "Mandrake",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Mandrake:3"
+    },
+    {
+      "pack": 22,
+      "slot": 0,
+      "label": "Mandrake, Land Grillon x2",
+      "monsters": [
+        {
+          "name": "Mandrake",
+          "count": 1
+        },
+        {
+          "name": "Land Grillon",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Land Grillon:2|Mandrake:1"
+    },
+    {
+      "pack": 22,
+      "slot": 1,
+      "label": "Venobennu x2",
+      "monsters": [
+        {
+          "name": "Venobennu",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Venobennu:2"
+    },
+    {
+      "pack": 22,
+      "slot": 2,
+      "label": "Gigantos",
+      "monsters": [
+        {
+          "name": "Gigantos",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gigantos:1"
+    },
+    {
+      "pack": 22,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 22,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 22,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 22,
+      "slot": 6,
+      "label": "Gigantos x2",
+      "monsters": [
+        {
+          "name": "Gigantos",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gigantos:2"
+    },
+    {
+      "pack": 22,
+      "slot": 7,
+      "label": "Sky Armor x2, Spitfire",
+      "monsters": [
+        {
+          "name": "Sky Armor",
+          "count": 2
+        },
+        {
+          "name": "Spitfire",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Sky Armor:2|Spitfire:1"
+    },
+    {
+      "pack": 23,
+      "slot": 0,
+      "label": "Sky Armor, Spitfire",
+      "monsters": [
+        {
+          "name": "Sky Armor",
+          "count": 1
+        },
+        {
+          "name": "Spitfire",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Sky Armor:1|Spitfire:1"
+    },
+    {
+      "pack": 23,
+      "slot": 1,
+      "label": "Behemoth",
+      "monsters": [
+        {
+          "name": "Behemoth",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Behemoth:1"
+    },
+    {
+      "pack": 23,
+      "slot": 2,
+      "label": "Apocrypha, Misfit x2",
+      "monsters": [
+        {
+          "name": "Apocrypha",
+          "count": 1
+        },
+        {
+          "name": "Misfit",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Apocrypha:1|Misfit:2"
+    },
+    {
+      "pack": 23,
+      "slot": 3,
+      "label": "Apocrypha",
+      "monsters": [
+        {
+          "name": "Apocrypha",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Apocrypha:1"
+    },
+    {
+      "pack": 23,
+      "slot": 4,
+      "label": "Ninja x2",
+      "monsters": [
+        {
+          "name": "Ninja",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Ninja:2"
+    },
+    {
+      "pack": 23,
+      "slot": 5,
+      "label": "Platinum Dragon x3",
+      "monsters": [
+        {
+          "name": "Platinum Dragon",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Platinum Dragon:3"
+    },
+    {
+      "pack": 23,
+      "slot": 6,
+      "label": "Apocrypha x3",
+      "monsters": [
+        {
+          "name": "Apocrypha",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Apocrypha:3"
+    },
+    {
+      "pack": 23,
+      "slot": 7,
+      "label": "Brainpan x2, Misfit, Apocrypha",
+      "monsters": [
+        {
+          "name": "Brainpan",
+          "count": 2
+        },
+        {
+          "name": "Misfit",
+          "count": 1
+        },
+        {
+          "name": "Apocrypha",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Apocrypha:1|Brainpan:2|Misfit:1"
+    },
+    {
+      "pack": 24,
+      "slot": 0,
+      "label": "Brainpan x3",
+      "monsters": [
+        {
+          "name": "Brainpan",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Brainpan:3"
+    },
+    {
+      "pack": 24,
+      "slot": 1,
+      "label": "Dragon",
+      "monsters": [
+        {
+          "name": "Dragon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Dragon:1"
+    },
+    {
+      "pack": 24,
+      "slot": 2,
+      "label": "Behemoth, Misfit x2",
+      "monsters": [
+        {
+          "name": "Behemoth",
+          "count": 1
+        },
+        {
+          "name": "Misfit",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Behemoth:1|Misfit:2"
+    },
+    {
+      "pack": 24,
+      "slot": 3,
+      "label": "Behemoth x2",
+      "monsters": [
+        {
+          "name": "Behemoth",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Behemoth:2"
+    },
+    {
+      "pack": 24,
+      "slot": 4,
+      "label": "Ninja x2, Platinum Dragon",
+      "monsters": [
+        {
+          "name": "Ninja",
+          "count": 2
+        },
+        {
+          "name": "Platinum Dragon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Ninja:2|Platinum Dragon:1"
+    },
+    {
+      "pack": 24,
+      "slot": 5,
+      "label": "Grenade",
+      "monsters": [
+        {
+          "name": "Grenade",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Grenade:1"
+    },
+    {
+      "pack": 24,
+      "slot": 6,
+      "label": "Chimera, Devourer x2",
+      "monsters": [
+        {
+          "name": "Chimera",
+          "count": 1
+        },
+        {
+          "name": "Devourer",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Chimera:1|Devourer:2"
+    },
+    {
+      "pack": 24,
+      "slot": 7,
+      "label": "Briareus x2",
+      "monsters": [
+        {
+          "name": "Briareus",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Briareus:2"
+    },
+    {
+      "pack": 25,
+      "slot": 0,
+      "label": "Peeper x2",
+      "monsters": [
+        {
+          "name": "Peeper",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Peeper:2"
+    },
+    {
+      "pack": 25,
+      "slot": 1,
+      "label": "Peeper x3",
+      "monsters": [
+        {
+          "name": "Peeper",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Peeper:3"
+    },
+    {
+      "pack": 25,
+      "slot": 2,
+      "label": "Land Ray, Peeper x2",
+      "monsters": [
+        {
+          "name": "Land Ray",
+          "count": 1
+        },
+        {
+          "name": "Peeper",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Land Ray:1|Peeper:2"
+    },
+    {
+      "pack": 25,
+      "slot": 3,
+      "label": "Black Dragon",
+      "monsters": [
+        {
+          "name": "Black Dragon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Black Dragon:1"
+    },
+    {
+      "pack": 25,
+      "slot": 4,
+      "label": "Daedalus, Ahriman",
+      "monsters": [
+        {
+          "name": "Daedalus",
+          "count": 1
+        },
+        {
+          "name": "Ahriman",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Ahriman:1|Daedalus:1"
+    },
+    {
+      "pack": 25,
+      "slot": 5,
+      "label": "Fafnir x2",
+      "monsters": [
+        {
+          "name": "Fafnir",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Fafnir:2"
+    },
+    {
+      "pack": 25,
+      "slot": 6,
+      "label": "Fafnir x4",
+      "monsters": [
+        {
+          "name": "Fafnir",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Fafnir:4"
+    },
+    {
+      "pack": 25,
+      "slot": 7,
+      "label": "Killer Mantis, Fafnir",
+      "monsters": [
+        {
+          "name": "Killer Mantis",
+          "count": 1
+        },
+        {
+          "name": "Fafnir",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Fafnir:1|Killer Mantis:1"
+    },
+    {
+      "pack": 26,
+      "slot": 0,
+      "label": "Killer Mantis x2, Fafnir",
+      "monsters": [
+        {
+          "name": "Killer Mantis",
+          "count": 2
+        },
+        {
+          "name": "Fafnir",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Fafnir:1|Killer Mantis:2"
+    },
+    {
+      "pack": 26,
+      "slot": 1,
+      "label": "Murussu, Gigantoad x2",
+      "monsters": [
+        {
+          "name": "Murussu",
+          "count": 1
+        },
+        {
+          "name": "Gigantoad",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gigantoad:2|Murussu:1"
+    },
+    {
+      "pack": 26,
+      "slot": 2,
+      "label": "Luna Wolf, Rukh",
+      "monsters": [
+        {
+          "name": "Luna Wolf",
+          "count": 1
+        },
+        {
+          "name": "Rukh",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Luna Wolf:1|Rukh:1"
+    },
+    {
+      "pack": 26,
+      "slot": 3,
+      "label": "Luna Wolf x2",
+      "monsters": [
+        {
+          "name": "Luna Wolf",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Luna Wolf:2"
+    },
+    {
+      "pack": 26,
+      "slot": 4,
+      "label": "Rukh, Murussu, Gigantoad",
+      "monsters": [
+        {
+          "name": "Rukh",
+          "count": 1
+        },
+        {
+          "name": "Murussu",
+          "count": 1
+        },
+        {
+          "name": "Gigantoad",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gigantoad:1|Murussu:1|Rukh:1"
+    },
+    {
+      "pack": 26,
+      "slot": 5,
+      "label": "Cherry, Ahriman x2",
+      "monsters": [
+        {
+          "name": "Cherry",
+          "count": 1
+        },
+        {
+          "name": "Ahriman",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Ahriman:2|Cherry:1"
+    },
+    {
+      "pack": 26,
+      "slot": 6,
+      "label": "Ahriman x3",
+      "monsters": [
+        {
+          "name": "Ahriman",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Ahriman:3"
+    },
+    {
+      "pack": 26,
+      "slot": 7,
+      "label": "Zokka x2, Nightwalker",
+      "monsters": [
+        {
+          "name": "Zokka",
+          "count": 2
+        },
+        {
+          "name": "Nightwalker",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Nightwalker:1|Zokka:2"
+    },
+    {
+      "pack": 27,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 27,
+      "slot": 1,
+      "label": "Scorpion x3",
+      "monsters": [
+        {
+          "name": "Scorpion",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Scorpion:3"
+    },
+    {
+      "pack": 27,
+      "slot": 2,
+      "label": "Intangir",
+      "monsters": [
+        {
+          "name": "Intangir",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Intangir:1"
+    },
+    {
+      "pack": 27,
+      "slot": 3,
+      "label": "Nightwalker x4",
+      "monsters": [
+        {
+          "name": "Nightwalker",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Nightwalker:4"
+    },
+    {
+      "pack": 27,
+      "slot": 4,
+      "label": "Vector Chimera x2",
+      "monsters": [
+        {
+          "name": "Vector Chimera",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Vector Chimera:2"
+    },
+    {
+      "pack": 27,
+      "slot": 5,
+      "label": "Devoahan",
+      "monsters": [
+        {
+          "name": "Devoahan",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Devoahan:1"
+    },
+    {
+      "pack": 27,
+      "slot": 6,
+      "label": "Devoahan, Delta Beetle x2",
+      "monsters": [
+        {
+          "name": "Devoahan",
+          "count": 1
+        },
+        {
+          "name": "Delta Beetle",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Delta Beetle:2|Devoahan:1"
+    },
+    {
+      "pack": 27,
+      "slot": 7,
+      "label": "Vampire Thorn x2, Lizard",
+      "monsters": [
+        {
+          "name": "Vampire Thorn",
+          "count": 2
+        },
+        {
+          "name": "Lizard",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Lizard:1|Vampire Thorn:2"
+    },
+    {
+      "pack": 28,
+      "slot": 0,
+      "label": "Vampire Thorn x2",
+      "monsters": [
+        {
+          "name": "Vampire Thorn",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Vampire Thorn:2"
+    },
+    {
+      "pack": 28,
+      "slot": 1,
+      "label": "Delta Beetle x4",
+      "monsters": [
+        {
+          "name": "Delta Beetle",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Delta Beetle:4"
+    },
+    {
+      "pack": 28,
+      "slot": 2,
+      "label": "Vampire Thorn x2, Delta Beetle",
+      "monsters": [
+        {
+          "name": "Vampire Thorn",
+          "count": 2
+        },
+        {
+          "name": "Delta Beetle",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Delta Beetle:1|Vampire Thorn:2"
+    },
+    {
+      "pack": 28,
+      "slot": 3,
+      "label": "Devoahan, Lizard",
+      "monsters": [
+        {
+          "name": "Devoahan",
+          "count": 1
+        },
+        {
+          "name": "Lizard",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Devoahan:1|Lizard:1"
+    },
+    {
+      "pack": 28,
+      "slot": 4,
+      "label": "Cancer x2, Desert Hare x2",
+      "monsters": [
+        {
+          "name": "Cancer",
+          "count": 2
+        },
+        {
+          "name": "Desert Hare",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cancer:2|Desert Hare:2"
+    },
+    {
+      "pack": 28,
+      "slot": 5,
+      "label": "Cactuar",
+      "monsters": [
+        {
+          "name": "Cactuar",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cactuar:1"
+    },
+    {
+      "pack": 28,
+      "slot": 6,
+      "label": "Sandhorse x2",
+      "monsters": [
+        {
+          "name": "Sandhorse",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Sandhorse:2"
+    },
+    {
+      "pack": 28,
+      "slot": 7,
+      "label": "Sandhorse, Cancer x2",
+      "monsters": [
+        {
+          "name": "Sandhorse",
+          "count": 1
+        },
+        {
+          "name": "Cancer",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cancer:2|Sandhorse:1"
+    },
+    {
+      "pack": 29,
+      "slot": 0,
+      "label": "Oceanus",
+      "monsters": [
+        {
+          "name": "Oceanus",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Oceanus:1"
+    },
+    {
+      "pack": 29,
+      "slot": 1,
+      "label": "Oceanus, Desert Hare x3",
+      "monsters": [
+        {
+          "name": "Oceanus",
+          "count": 1
+        },
+        {
+          "name": "Desert Hare",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Desert Hare:3|Oceanus:1"
+    },
+    {
+      "pack": 29,
+      "slot": 2,
+      "label": "Fiend Dragon x2",
+      "monsters": [
+        {
+          "name": "Fiend Dragon",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Fiend Dragon:2"
+    },
+    {
+      "pack": 29,
+      "slot": 3,
+      "label": "Landworm",
+      "monsters": [
+        {
+          "name": "Landworm",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Landworm:1"
+    },
+    {
+      "pack": 29,
+      "slot": 4,
+      "label": "Humpty x3",
+      "monsters": [
+        {
+          "name": "Humpty",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Humpty:3"
+    },
+    {
+      "pack": 29,
+      "slot": 5,
+      "label": "Cruller, Humpty x2",
+      "monsters": [
+        {
+          "name": "Cruller",
+          "count": 1
+        },
+        {
+          "name": "Humpty",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cruller:1|Humpty:2"
+    },
+    {
+      "pack": 29,
+      "slot": 6,
+      "label": "Humpty x4",
+      "monsters": [
+        {
+          "name": "Humpty",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Humpty:4"
+    },
+    {
+      "pack": 29,
+      "slot": 7,
+      "label": "Neck Hunter x2",
+      "monsters": [
+        {
+          "name": "Neck Hunter",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Neck Hunter:2"
+    },
+    {
+      "pack": 30,
+      "slot": 0,
+      "label": "Neck Hunter, Cruller, Humpty x2",
+      "monsters": [
+        {
+          "name": "Neck Hunter",
+          "count": 1
+        },
+        {
+          "name": "Cruller",
+          "count": 1
+        },
+        {
+          "name": "Humpty",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cruller:1|Humpty:2|Neck Hunter:1"
+    },
+    {
+      "pack": 30,
+      "slot": 1,
+      "label": "Dante",
+      "monsters": [
+        {
+          "name": "Dante",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Dante:1"
+    },
+    {
+      "pack": 30,
+      "slot": 2,
+      "label": "Dropper x3",
+      "monsters": [
+        {
+          "name": "Dropper",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Dropper:3"
+    },
+    {
+      "pack": 30,
+      "slot": 3,
+      "label": "Tonberries x3",
+      "monsters": [
+        {
+          "name": "Tonberries",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Tonberries:3"
+    },
+    {
+      "pack": 30,
+      "slot": 4,
+      "label": "Marchosias",
+      "monsters": [
+        {
+          "name": "Marchosias",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Marchosias:1"
+    },
+    {
+      "pack": 30,
+      "slot": 5,
+      "label": "Slagworm",
+      "monsters": [
+        {
+          "name": "Slagworm",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Slagworm:1"
+    },
+    {
+      "pack": 30,
+      "slot": 6,
+      "label": "Marchosias, Deepeye x2",
+      "monsters": [
+        {
+          "name": "Marchosias",
+          "count": 1
+        },
+        {
+          "name": "Deepeye",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Deepeye:2|Marchosias:1"
+    },
+    {
+      "pack": 30,
+      "slot": 7,
+      "label": "Bogy x2",
+      "monsters": [
+        {
+          "name": "Bogy",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Bogy:2"
+    },
+    {
+      "pack": 31,
+      "slot": 0,
+      "label": "Deepeye x6",
+      "monsters": [
+        {
+          "name": "Deepeye",
+          "count": 6
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Deepeye:6"
+    },
+    {
+      "pack": 31,
+      "slot": 1,
+      "label": "Deepeye x2, Mousse x2",
+      "monsters": [
+        {
+          "name": "Deepeye",
+          "count": 2
+        },
+        {
+          "name": "Mousse",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Deepeye:2|Mousse:2"
+    },
+    {
+      "pack": 31,
+      "slot": 2,
+      "label": "Mousse x3",
+      "monsters": [
+        {
+          "name": "Mousse",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Mousse:3"
+    },
+    {
+      "pack": 31,
+      "slot": 3,
+      "label": "Mousse",
+      "monsters": [
+        {
+          "name": "Mousse",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Mousse:1"
+    },
+    {
+      "pack": 31,
+      "slot": 4,
+      "label": "Borghese x2",
+      "monsters": [
+        {
+          "name": "Borghese",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Borghese:2"
+    },
+    {
+      "pack": 31,
+      "slot": 5,
+      "label": "Borghese, Cloudwraith x2",
+      "monsters": [
+        {
+          "name": "Borghese",
+          "count": 1
+        },
+        {
+          "name": "Cloudwraith",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Borghese:1|Cloudwraith:2"
+    },
+    {
+      "pack": 31,
+      "slot": 6,
+      "label": "Skeletal Horror",
+      "monsters": [
+        {
+          "name": "Skeletal Horror",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Skeletal Horror:1"
+    },
+    {
+      "pack": 31,
+      "slot": 7,
+      "label": "Cloudwraith",
+      "monsters": [
+        {
+          "name": "Cloudwraith",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cloudwraith:1"
+    },
+    {
+      "pack": 32,
+      "slot": 0,
+      "label": "Cloudwraith, Exoray x2",
+      "monsters": [
+        {
+          "name": "Cloudwraith",
+          "count": 1
+        },
+        {
+          "name": "Exoray",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cloudwraith:1|Exoray:2"
+    },
+    {
+      "pack": 32,
+      "slot": 1,
+      "label": "Exoray x3",
+      "monsters": [
+        {
+          "name": "Exoray",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Exoray:3"
+    },
+    {
+      "pack": 32,
+      "slot": 2,
+      "label": "Malboro, Exoray",
+      "monsters": [
+        {
+          "name": "Malboro",
+          "count": 1
+        },
+        {
+          "name": "Exoray",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Exoray:1|Malboro:1"
+    },
+    {
+      "pack": 32,
+      "slot": 3,
+      "label": "Malboro",
+      "monsters": [
+        {
+          "name": "Malboro",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Malboro:1"
+    },
+    {
+      "pack": 32,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 32,
+      "slot": 5,
+      "label": "Tonberry",
+      "monsters": [
+        {
+          "name": "Tonberry",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Tonberry:1"
+    },
+    {
+      "pack": 32,
+      "slot": 6,
+      "label": "Knotty x4",
+      "monsters": [
+        {
+          "name": "Knotty",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Knotty:4"
+    },
+    {
+      "pack": 32,
+      "slot": 7,
+      "label": "Tzakmaqiel, Illuyankas",
+      "monsters": [
+        {
+          "name": "Tzakmaqiel",
+          "count": 1
+        },
+        {
+          "name": "Illuyankas",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Illuyankas:1|Tzakmaqiel:1"
+    },
+    {
+      "pack": 33,
+      "slot": 0,
+      "label": "Tzakmaqiel, Knotty x3",
+      "monsters": [
+        {
+          "name": "Tzakmaqiel",
+          "count": 1
+        },
+        {
+          "name": "Knotty",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Knotty:3|Tzakmaqiel:1"
+    },
+    {
+      "pack": 33,
+      "slot": 1,
+      "label": "Illuyankas x3",
+      "monsters": [
+        {
+          "name": "Illuyankas",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Illuyankas:3"
+    },
+    {
+      "pack": 33,
+      "slot": 2,
+      "label": "Anemone x2, Onion Dasher",
+      "monsters": [
+        {
+          "name": "Anemone",
+          "count": 2
+        },
+        {
+          "name": "Onion Dasher",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Anemone:2|Onion Dasher:1"
+    },
+    {
+      "pack": 33,
+      "slot": 3,
+      "label": "Anemone x4",
+      "monsters": [
+        {
+          "name": "Anemone",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Anemone:4"
+    },
+    {
+      "pack": 33,
+      "slot": 4,
+      "label": "Illuyankas, Onion Dasher x2",
+      "monsters": [
+        {
+          "name": "Illuyankas",
+          "count": 1
+        },
+        {
+          "name": "Onion Dasher",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Illuyankas:1|Onion Dasher:2"
+    },
+    {
+      "pack": 33,
+      "slot": 5,
+      "label": "Luridan x3",
+      "monsters": [
+        {
+          "name": "Luridan",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Luridan:3"
+    },
+    {
+      "pack": 33,
+      "slot": 6,
+      "label": "Punisher x2, Devil Fist",
+      "monsters": [
+        {
+          "name": "Punisher",
+          "count": 2
+        },
+        {
+          "name": "Devil Fist",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Devil Fist:1|Punisher:2"
+    },
+    {
+      "pack": 33,
+      "slot": 7,
+      "label": "Glasya Labolas",
+      "monsters": [
+        {
+          "name": "Glasya Labolas",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Glasya Labolas:1"
+    },
+    {
+      "pack": 34,
+      "slot": 0,
+      "label": "Glasya Labolas, Mugbear, Devil Fist",
+      "monsters": [
+        {
+          "name": "Glasya Labolas",
+          "count": 1
+        },
+        {
+          "name": "Mugbear",
+          "count": 1
+        },
+        {
+          "name": "Devil Fist",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Devil Fist:1|Glasya Labolas:1|Mugbear:1"
+    },
+    {
+      "pack": 34,
+      "slot": 1,
+      "label": "Mugbear",
+      "monsters": [
+        {
+          "name": "Mugbear",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Mugbear:1"
+    },
+    {
+      "pack": 34,
+      "slot": 2,
+      "label": "Luridan x6",
+      "monsters": [
+        {
+          "name": "Luridan",
+          "count": 6
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Luridan:6"
+    },
+    {
+      "pack": 34,
+      "slot": 3,
+      "label": "Mugbear, Punisher",
+      "monsters": [
+        {
+          "name": "Mugbear",
+          "count": 1
+        },
+        {
+          "name": "Punisher",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Mugbear:1|Punisher:1"
+    },
+    {
+      "pack": 34,
+      "slot": 4,
+      "label": "Twinscythe",
+      "monsters": [
+        {
+          "name": "Twinscythe",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Twinscythe:1"
+    },
+    {
+      "pack": 34,
+      "slot": 5,
+      "label": "Twinscythe x2",
+      "monsters": [
+        {
+          "name": "Twinscythe",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Twinscythe:2"
+    },
+    {
+      "pack": 34,
+      "slot": 6,
+      "label": "Gorgimera",
+      "monsters": [
+        {
+          "name": "Gorgimera",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gorgimera:1"
+    },
+    {
+      "pack": 34,
+      "slot": 7,
+      "label": "Vector Lythos x4",
+      "monsters": [
+        {
+          "name": "Vector Lythos",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Vector Lythos:4"
+    },
+    {
+      "pack": 35,
+      "slot": 0,
+      "label": "Primeval Dragon, Great Malboro",
+      "monsters": [
+        {
+          "name": "Primeval Dragon",
+          "count": 1
+        },
+        {
+          "name": "Great Malboro",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Great Malboro:1|Primeval Dragon:1"
+    },
+    {
+      "pack": 35,
+      "slot": 1,
+      "label": "Garm x3",
+      "monsters": [
+        {
+          "name": "Garm",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Garm:3"
+    },
+    {
+      "pack": 35,
+      "slot": 2,
+      "label": "Test Rider",
+      "monsters": [
+        {
+          "name": "Test Rider",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Test Rider:1"
+    },
+    {
+      "pack": 35,
+      "slot": 3,
+      "label": "Lukhavi, Garm x2",
+      "monsters": [
+        {
+          "name": "Lukhavi",
+          "count": 1
+        },
+        {
+          "name": "Garm",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Garm:2|Lukhavi:1"
+    },
+    {
+      "pack": 35,
+      "slot": 4,
+      "label": "Wizard x3",
+      "monsters": [
+        {
+          "name": "Wizard",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Wizard:3"
+    },
+    {
+      "pack": 35,
+      "slot": 5,
+      "label": "Wizard x2, Psychos x3",
+      "monsters": [
+        {
+          "name": "Wizard",
+          "count": 2
+        },
+        {
+          "name": "Psychos",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Psychos:3|Wizard:2"
+    },
+    {
+      "pack": 35,
+      "slot": 6,
+      "label": "Garm x2, Psychos x2",
+      "monsters": [
+        {
+          "name": "Garm",
+          "count": 2
+        },
+        {
+          "name": "Psychos",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Garm:2|Psychos:2"
+    },
+    {
+      "pack": 35,
+      "slot": 7,
+      "label": "Psychos x6",
+      "monsters": [
+        {
+          "name": "Psychos",
+          "count": 6
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Psychos:6"
+    },
+    {
+      "pack": 36,
+      "slot": 0,
+      "label": "Magna Roader (Yellow) x2, Magna Roader (Brown)",
+      "monsters": [
+        {
+          "name": "Magna Roader (Yellow)",
+          "count": 2
+        },
+        {
+          "name": "Magna Roader (Brown)",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Magna Roader (Brown):1|Magna Roader (Yellow):2"
+    },
+    {
+      "pack": 36,
+      "slot": 1,
+      "label": "Magna Roader (Yellow), Magna Roader (Brown) x2",
+      "monsters": [
+        {
+          "name": "Magna Roader (Yellow)",
+          "count": 1
+        },
+        {
+          "name": "Magna Roader (Brown)",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Magna Roader (Brown):2|Magna Roader (Yellow):1"
+    },
+    {
+      "pack": 36,
+      "slot": 2,
+      "label": "Primeval Dragon x2",
+      "monsters": [
+        {
+          "name": "Primeval Dragon",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Primeval Dragon:2"
+    },
+    {
+      "pack": 36,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 36,
+      "slot": 4,
+      "label": "Blade Dancer x2, Crusher x2",
+      "monsters": [
+        {
+          "name": "Blade Dancer",
+          "count": 2
+        },
+        {
+          "name": "Crusher",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Blade Dancer:2|Crusher:2"
+    },
+    {
+      "pack": 36,
+      "slot": 5,
+      "label": "Caladrius x2, Coeurl Cat, Crusher x2",
+      "monsters": [
+        {
+          "name": "Caladrius",
+          "count": 2
+        },
+        {
+          "name": "Coeurl Cat",
+          "count": 1
+        },
+        {
+          "name": "Crusher",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Caladrius:2|Coeurl Cat:1|Crusher:2"
+    },
+    {
+      "pack": 36,
+      "slot": 6,
+      "label": "Caladrius x2",
+      "monsters": [
+        {
+          "name": "Caladrius",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Caladrius:2"
+    },
+    {
+      "pack": 36,
+      "slot": 7,
+      "label": "Blade Dancer, Coeurl Cat x4",
+      "monsters": [
+        {
+          "name": "Blade Dancer",
+          "count": 1
+        },
+        {
+          "name": "Coeurl Cat",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Blade Dancer:1|Coeurl Cat:4"
+    },
+    {
+      "pack": 37,
+      "slot": 0,
+      "label": "Misty x2",
+      "monsters": [
+        {
+          "name": "Misty",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Misty:2"
+    },
+    {
+      "pack": 37,
+      "slot": 1,
+      "label": "Rafflesia x3",
+      "monsters": [
+        {
+          "name": "Rafflesia",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Rafflesia:3"
+    },
+    {
+      "pack": 37,
+      "slot": 2,
+      "label": "Still Life",
+      "monsters": [
+        {
+          "name": "Still Life",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Still Life:1"
+    },
+    {
+      "pack": 37,
+      "slot": 3,
+      "label": "Aspidochelon x2",
+      "monsters": [
+        {
+          "name": "Aspidochelon",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Aspidochelon:2"
+    },
+    {
+      "pack": 37,
+      "slot": 4,
+      "label": "Mahadeva",
+      "monsters": [
+        {
+          "name": "Mahadeva",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Mahadeva:1"
+    },
+    {
+      "pack": 37,
+      "slot": 5,
+      "label": "Aspidochelon, Moonform, Creature",
+      "monsters": [
+        {
+          "name": "Aspidochelon",
+          "count": 1
+        },
+        {
+          "name": "Moonform",
+          "count": 1
+        },
+        {
+          "name": "Creature",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Aspidochelon:1|Creature:1|Moonform:1"
+    },
+    {
+      "pack": 37,
+      "slot": 6,
+      "label": "Moonform x3",
+      "monsters": [
+        {
+          "name": "Moonform",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Moonform:3"
+    },
+    {
+      "pack": 37,
+      "slot": 7,
+      "label": "Moonform, Medusa Chicken x3",
+      "monsters": [
+        {
+          "name": "Moonform",
+          "count": 1
+        },
+        {
+          "name": "Medusa Chicken",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Medusa Chicken:3|Moonform:1"
+    },
+    {
+      "pack": 38,
+      "slot": 0,
+      "label": "Sorath, Warlock, Creature",
+      "monsters": [
+        {
+          "name": "Sorath",
+          "count": 1
+        },
+        {
+          "name": "Warlock",
+          "count": 1
+        },
+        {
+          "name": "Creature",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Creature:1|Sorath:1|Warlock:1"
+    },
+    {
+      "pack": 38,
+      "slot": 1,
+      "label": "Sorath x2",
+      "monsters": [
+        {
+          "name": "Sorath",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Sorath:2"
+    },
+    {
+      "pack": 38,
+      "slot": 2,
+      "label": "Warlock, Medusa Chicken x2, Creature x2",
+      "monsters": [
+        {
+          "name": "Warlock",
+          "count": 1
+        },
+        {
+          "name": "Medusa Chicken",
+          "count": 2
+        },
+        {
+          "name": "Creature",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Creature:2|Medusa Chicken:2|Warlock:1"
+    },
+    {
+      "pack": 38,
+      "slot": 3,
+      "label": "Great Behemoth, Vector Lythos x2",
+      "monsters": [
+        {
+          "name": "Great Behemoth",
+          "count": 1
+        },
+        {
+          "name": "Vector Lythos",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Great Behemoth:1|Vector Lythos:2"
+    },
+    {
+      "pack": 38,
+      "slot": 4,
+      "label": "Fiend Dragon",
+      "monsters": [
+        {
+          "name": "Fiend Dragon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Fiend Dragon:1"
+    },
+    {
+      "pack": 38,
+      "slot": 5,
+      "label": "Devil x2",
+      "monsters": [
+        {
+          "name": "Devil",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Devil:2"
+    },
+    {
+      "pack": 38,
+      "slot": 6,
+      "label": "Devil, Figaro Lizard x2",
+      "monsters": [
+        {
+          "name": "Devil",
+          "count": 1
+        },
+        {
+          "name": "Figaro Lizard",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Devil:1|Figaro Lizard:2"
+    },
+    {
+      "pack": 38,
+      "slot": 7,
+      "label": "Lunatys x2, Figaro Lizard x2",
+      "monsters": [
+        {
+          "name": "Lunatys",
+          "count": 2
+        },
+        {
+          "name": "Figaro Lizard",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Figaro Lizard:2|Lunatys:2"
+    },
+    {
+      "pack": 39,
+      "slot": 0,
+      "label": "Lunatys",
+      "monsters": [
+        {
+          "name": "Lunatys",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Lunatys:1"
+    },
+    {
+      "pack": 39,
+      "slot": 1,
+      "label": "Armored Weapon",
+      "monsters": [
+        {
+          "name": "Armored Weapon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Armored Weapon:1"
+    },
+    {
+      "pack": 39,
+      "slot": 2,
+      "label": "Enuo x2",
+      "monsters": [
+        {
+          "name": "Enuo",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Enuo:2"
+    },
+    {
+      "pack": 39,
+      "slot": 3,
+      "label": "Enuo, Devil, Figaro Lizard",
+      "monsters": [
+        {
+          "name": "Enuo",
+          "count": 1
+        },
+        {
+          "name": "Devil",
+          "count": 1
+        },
+        {
+          "name": "Figaro Lizard",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Devil:1|Enuo:1|Figaro Lizard:1"
+    },
+    {
+      "pack": 39,
+      "slot": 4,
+      "label": "Lunatys x4",
+      "monsters": [
+        {
+          "name": "Lunatys",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Lunatys:4"
+    },
+    {
+      "pack": 39,
+      "slot": 5,
+      "label": "Al Jabr x2",
+      "monsters": [
+        {
+          "name": "Al Jabr",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Al Jabr:2"
+    },
+    {
+      "pack": 39,
+      "slot": 6,
+      "label": "Samurai, Al Jabr x2",
+      "monsters": [
+        {
+          "name": "Samurai",
+          "count": 1
+        },
+        {
+          "name": "Al Jabr",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Al Jabr:2|Samurai:1"
+    },
+    {
+      "pack": 39,
+      "slot": 7,
+      "label": "Pluto Armor x2",
+      "monsters": [
+        {
+          "name": "Pluto Armor",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Pluto Armor:2"
+    },
+    {
+      "pack": 40,
+      "slot": 0,
+      "label": "Coco, Alluring Rider",
+      "monsters": [
+        {
+          "name": "Coco",
+          "count": 1
+        },
+        {
+          "name": "Alluring Rider",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Alluring Rider:1|Coco:1"
+    },
+    {
+      "pack": 40,
+      "slot": 1,
+      "label": "Pluto Armor, Schmidt",
+      "monsters": [
+        {
+          "name": "Pluto Armor",
+          "count": 1
+        },
+        {
+          "name": "Schmidt",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Pluto Armor:1|Schmidt:1"
+    },
+    {
+      "pack": 40,
+      "slot": 2,
+      "label": "Weredragon, Parasite x3",
+      "monsters": [
+        {
+          "name": "Weredragon",
+          "count": 1
+        },
+        {
+          "name": "Parasite",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Parasite:3|Weredragon:1"
+    },
+    {
+      "pack": 40,
+      "slot": 3,
+      "label": "Alluring Rider, Pandora x3",
+      "monsters": [
+        {
+          "name": "Alluring Rider",
+          "count": 1
+        },
+        {
+          "name": "Pandora",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Alluring Rider:1|Pandora:3"
+    },
+    {
+      "pack": 40,
+      "slot": 4,
+      "label": "Weredragon",
+      "monsters": [
+        {
+          "name": "Weredragon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Weredragon:1"
+    },
+    {
+      "pack": 40,
+      "slot": 5,
+      "label": "Coco, Samurai, Suriander",
+      "monsters": [
+        {
+          "name": "Coco",
+          "count": 1
+        },
+        {
+          "name": "Samurai",
+          "count": 1
+        },
+        {
+          "name": "Suriander",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Coco:1|Samurai:1|Suriander:1"
+    },
+    {
+      "pack": 40,
+      "slot": 6,
+      "label": "Suriander, Pandora, Parasite x2",
+      "monsters": [
+        {
+          "name": "Suriander",
+          "count": 1
+        },
+        {
+          "name": "Pandora",
+          "count": 1
+        },
+        {
+          "name": "Parasite",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Pandora:1|Parasite:2|Suriander:1"
+    },
+    {
+      "pack": 40,
+      "slot": 7,
+      "label": "Crawler x3",
+      "monsters": [
+        {
+          "name": "Crawler",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Crawler:3"
+    },
+    {
+      "pack": 41,
+      "slot": 0,
+      "label": "Tyrannosaur x2",
+      "monsters": [
+        {
+          "name": "Tyrannosaur",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Tyrannosaur:2"
+    },
+    {
+      "pack": 41,
+      "slot": 1,
+      "label": "Tyrannosaur",
+      "monsters": [
+        {
+          "name": "Tyrannosaur",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Tyrannosaur:1"
+    },
+    {
+      "pack": 41,
+      "slot": 2,
+      "label": "Brachiosaur",
+      "monsters": [
+        {
+          "name": "Brachiosaur",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Brachiosaur:1"
+    },
+    {
+      "pack": 41,
+      "slot": 3,
+      "label": "Greater Mantis, Sprinter, Lycaon x2",
+      "monsters": [
+        {
+          "name": "Greater Mantis",
+          "count": 1
+        },
+        {
+          "name": "Sprinter",
+          "count": 1
+        },
+        {
+          "name": "Lycaon",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Greater Mantis:1|Lycaon:2|Sprinter:1"
+    },
+    {
+      "pack": 41,
+      "slot": 4,
+      "label": "Leap Frog x4",
+      "monsters": [
+        {
+          "name": "Leap Frog",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Leap Frog:4"
+    },
+    {
+      "pack": 41,
+      "slot": 5,
+      "label": "Greater Mantis x2",
+      "monsters": [
+        {
+          "name": "Greater Mantis",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Greater Mantis:2"
+    },
+    {
+      "pack": 41,
+      "slot": 6,
+      "label": "Basilisk x2, Leap Frog",
+      "monsters": [
+        {
+          "name": "Basilisk",
+          "count": 2
+        },
+        {
+          "name": "Leap Frog",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Basilisk:2|Leap Frog:1"
+    },
+    {
+      "pack": 41,
+      "slot": 7,
+      "label": "Tumbleweed x4",
+      "monsters": [
+        {
+          "name": "Tumbleweed",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Tumbleweed:4"
+    },
+    {
+      "pack": 42,
+      "slot": 0,
+      "label": "Sprinter x2, Lycaon x2",
+      "monsters": [
+        {
+          "name": "Sprinter",
+          "count": 2
+        },
+        {
+          "name": "Lycaon",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Lycaon:2|Sprinter:2"
+    },
+    {
+      "pack": 42,
+      "slot": 1,
+      "label": "Great Behemoth, Great Malboro, Vector Lythos",
+      "monsters": [
+        {
+          "name": "Great Behemoth",
+          "count": 1
+        },
+        {
+          "name": "Great Malboro",
+          "count": 1
+        },
+        {
+          "name": "Vector Lythos",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Great Behemoth:1|Great Malboro:1|Vector Lythos:1"
+    },
+    {
+      "pack": 42,
+      "slot": 2,
+      "label": "Great Malboro x3",
+      "monsters": [
+        {
+          "name": "Great Malboro",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Great Malboro:3"
+    },
+    {
+      "pack": 42,
+      "slot": 3,
+      "label": "Vasegiatta",
+      "monsters": [
+        {
+          "name": "Vasegiatta",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Vasegiatta:1"
+    },
+    {
+      "pack": 42,
+      "slot": 4,
+      "label": "Vasegiatta, Purusa",
+      "monsters": [
+        {
+          "name": "Vasegiatta",
+          "count": 1
+        },
+        {
+          "name": "Purusa",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Purusa:1|Vasegiatta:1"
+    },
+    {
+      "pack": 42,
+      "slot": 5,
+      "label": "Purusa, Gloomwind",
+      "monsters": [
+        {
+          "name": "Purusa",
+          "count": 1
+        },
+        {
+          "name": "Gloomwind",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gloomwind:1|Purusa:1"
+    },
+    {
+      "pack": 42,
+      "slot": 6,
+      "label": "Gloomwind x3",
+      "monsters": [
+        {
+          "name": "Gloomwind",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gloomwind:3"
+    },
+    {
+      "pack": 42,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 43,
+      "slot": 0,
+      "label": "Face x2",
+      "monsters": [
+        {
+          "name": "Face",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Face:2"
+    },
+    {
+      "pack": 43,
+      "slot": 1,
+      "label": "Clymenus x3",
+      "monsters": [
+        {
+          "name": "Clymenus",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Clymenus:3"
+    },
+    {
+      "pack": 43,
+      "slot": 2,
+      "label": "Face, Zeveak, Necromancer x2",
+      "monsters": [
+        {
+          "name": "Face",
+          "count": 1
+        },
+        {
+          "name": "Zeveak",
+          "count": 1
+        },
+        {
+          "name": "Necromancer",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Face:1|Necromancer:2|Zeveak:1"
+    },
+    {
+      "pack": 43,
+      "slot": 3,
+      "label": "Clymenus x2, Necromancer",
+      "monsters": [
+        {
+          "name": "Clymenus",
+          "count": 2
+        },
+        {
+          "name": "Necromancer",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Clymenus:2|Necromancer:1"
+    },
+    {
+      "pack": 43,
+      "slot": 4,
+      "label": "Seaflower x5",
+      "monsters": [
+        {
+          "name": "Seaflower",
+          "count": 5
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Seaflower:5"
+    },
+    {
+      "pack": 43,
+      "slot": 5,
+      "label": "Ouroboros, Seaflower x2",
+      "monsters": [
+        {
+          "name": "Ouroboros",
+          "count": 1
+        },
+        {
+          "name": "Seaflower",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Ouroboros:1|Seaflower:2"
+    },
+    {
+      "pack": 43,
+      "slot": 6,
+      "label": "Chaos Dragon, Ouroboros, Seaflower x2",
+      "monsters": [
+        {
+          "name": "Chaos Dragon",
+          "count": 1
+        },
+        {
+          "name": "Ouroboros",
+          "count": 1
+        },
+        {
+          "name": "Seaflower",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Chaos Dragon:1|Ouroboros:1|Seaflower:2"
+    },
+    {
+      "pack": 43,
+      "slot": 7,
+      "label": "Galypdes, Chaos Dragon x2",
+      "monsters": [
+        {
+          "name": "Galypdes",
+          "count": 1
+        },
+        {
+          "name": "Chaos Dragon",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Chaos Dragon:2|Galypdes:1"
+    },
+    {
+      "pack": 44,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 44,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 44,
+      "slot": 2,
+      "label": "Kamui x2",
+      "monsters": [
+        {
+          "name": "Kamui",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Kamui:2"
+    },
+    {
+      "pack": 44,
+      "slot": 3,
+      "label": "Covert, Kamui",
+      "monsters": [
+        {
+          "name": "Covert",
+          "count": 1
+        },
+        {
+          "name": "Kamui",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Covert:1|Kamui:1"
+    },
+    {
+      "pack": 44,
+      "slot": 4,
+      "label": "Wartpuck x2",
+      "monsters": [
+        {
+          "name": "Wartpuck",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Wartpuck:2"
+    },
+    {
+      "pack": 44,
+      "slot": 5,
+      "label": "Shambling Corpse x2",
+      "monsters": [
+        {
+          "name": "Shambling Corpse",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Shambling Corpse:2"
+    },
+    {
+      "pack": 44,
+      "slot": 6,
+      "label": "Amduscias, Covert x2",
+      "monsters": [
+        {
+          "name": "Amduscias",
+          "count": 1
+        },
+        {
+          "name": "Covert",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Amduscias:1|Covert:2"
+    },
+    {
+      "pack": 44,
+      "slot": 7,
+      "label": "Amduscias, Baalzephon",
+      "monsters": [
+        {
+          "name": "Amduscias",
+          "count": 1
+        },
+        {
+          "name": "Baalzephon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Amduscias:1|Baalzephon:1"
+    },
+    {
+      "pack": 45,
+      "slot": 0,
+      "label": "Baalzephon x2, Shambling Corpse x2",
+      "monsters": [
+        {
+          "name": "Baalzephon",
+          "count": 2
+        },
+        {
+          "name": "Shambling Corpse",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Baalzephon:2|Shambling Corpse:2"
+    },
+    {
+      "pack": 45,
+      "slot": 1,
+      "label": "Wartpuck, Kamui",
+      "monsters": [
+        {
+          "name": "Wartpuck",
+          "count": 1
+        },
+        {
+          "name": "Kamui",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Kamui:1|Wartpuck:1"
+    },
+    {
+      "pack": 45,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 45,
+      "slot": 3,
+      "label": "Magic Urn x2",
+      "monsters": [
+        {
+          "name": "Magic Urn",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Magic Urn:2"
+    },
+    {
+      "pack": 45,
+      "slot": 4,
+      "label": "Flan x6",
+      "monsters": [
+        {
+          "name": "Flan",
+          "count": 6
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Flan:6"
+    },
+    {
+      "pack": 45,
+      "slot": 5,
+      "label": "Flan x4",
+      "monsters": [
+        {
+          "name": "Flan",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Flan:4"
+    },
+    {
+      "pack": 45,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 45,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 46,
+      "slot": 0,
+      "label": "Destroyer x2",
+      "monsters": [
+        {
+          "name": "Destroyer",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Destroyer:2"
+    },
+    {
+      "pack": 46,
+      "slot": 1,
+      "label": "Lenergia x2, Destroyer",
+      "monsters": [
+        {
+          "name": "Lenergia",
+          "count": 2
+        },
+        {
+          "name": "Destroyer",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Destroyer:1|Lenergia:2"
+    },
+    {
+      "pack": 46,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 46,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 46,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 46,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 46,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 46,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 47,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 47,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 47,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 47,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 47,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 47,
+      "slot": 5,
+      "label": "Vector Hound x2, Commander",
+      "monsters": [
+        {
+          "name": "Vector Hound",
+          "count": 2
+        },
+        {
+          "name": "Commander",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Commander:1|Vector Hound:2"
+    },
+    {
+      "pack": 47,
+      "slot": 6,
+      "label": "Vector Hound x2",
+      "monsters": [
+        {
+          "name": "Vector Hound",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Vector Hound:2"
+    },
+    {
+      "pack": 47,
+      "slot": 7,
+      "label": "Cartagra, Acrophies x2",
+      "monsters": [
+        {
+          "name": "Cartagra",
+          "count": 1
+        },
+        {
+          "name": "Acrophies",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Acrophies:2|Cartagra:1"
+    },
+    {
+      "pack": 48,
+      "slot": 0,
+      "label": "Gold Bear, Acrophies",
+      "monsters": [
+        {
+          "name": "Gold Bear",
+          "count": 1
+        },
+        {
+          "name": "Acrophies",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Acrophies:1|Gold Bear:1"
+    },
+    {
+      "pack": 48,
+      "slot": 1,
+      "label": "Cartagra x3",
+      "monsters": [
+        {
+          "name": "Cartagra",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cartagra:3"
+    },
+    {
+      "pack": 48,
+      "slot": 2,
+      "label": "Acrophies x2",
+      "monsters": [
+        {
+          "name": "Acrophies",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Acrophies:2"
+    },
+    {
+      "pack": 48,
+      "slot": 3,
+      "label": "Darkside x2",
+      "monsters": [
+        {
+          "name": "Darkside",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Darkside:2"
+    },
+    {
+      "pack": 48,
+      "slot": 4,
+      "label": "Darkside, Specter, Eukaryote x3",
+      "monsters": [
+        {
+          "name": "Darkside",
+          "count": 1
+        },
+        {
+          "name": "Specter",
+          "count": 1
+        },
+        {
+          "name": "Eukaryote",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Darkside:1|Eukaryote:3|Specter:1"
+    },
+    {
+      "pack": 48,
+      "slot": 5,
+      "label": "Valeor, Wild Rat",
+      "monsters": [
+        {
+          "name": "Valeor",
+          "count": 1
+        },
+        {
+          "name": "Wild Rat",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Valeor:1|Wild Rat:1"
+    },
+    {
+      "pack": 48,
+      "slot": 6,
+      "label": "Valeor x3",
+      "monsters": [
+        {
+          "name": "Valeor",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Valeor:3"
+    },
+    {
+      "pack": 48,
+      "slot": 7,
+      "label": "Valeor x2, Wild Rat x3",
+      "monsters": [
+        {
+          "name": "Valeor",
+          "count": 2
+        },
+        {
+          "name": "Wild Rat",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Valeor:2|Wild Rat:3"
+    },
+    {
+      "pack": 49,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 49,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 49,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 49,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 49,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 49,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 49,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 49,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 50,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 50,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 50,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 50,
+      "slot": 3,
+      "label": "InnoSent, Fortis",
+      "monsters": [
+        {
+          "name": "InnoSent",
+          "count": 1
+        },
+        {
+          "name": "Fortis",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Fortis:1|InnoSent:1"
+    },
+    {
+      "pack": 50,
+      "slot": 4,
+      "label": "Fortis x2",
+      "monsters": [
+        {
+          "name": "Fortis",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Fortis:2"
+    },
+    {
+      "pack": 50,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 50,
+      "slot": 6,
+      "label": "Duel Armor x2, Death Machine",
+      "monsters": [
+        {
+          "name": "Duel Armor",
+          "count": 2
+        },
+        {
+          "name": "Death Machine",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Death Machine:1|Duel Armor:2"
+    },
+    {
+      "pack": 50,
+      "slot": 7,
+      "label": "Gamma",
+      "monsters": [
+        {
+          "name": "Gamma",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Gamma:1"
+    },
+    {
+      "pack": 51,
+      "slot": 0,
+      "label": "InnoSent x3",
+      "monsters": [
+        {
+          "name": "InnoSent",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "InnoSent:3"
+    },
+    {
+      "pack": 51,
+      "slot": 1,
+      "label": "Junk x3",
+      "monsters": [
+        {
+          "name": "Junk",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Junk:3"
+    },
+    {
+      "pack": 51,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 51,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 51,
+      "slot": 4,
+      "label": "Proto Armor, Onion Knight x2",
+      "monsters": [
+        {
+          "name": "Proto Armor",
+          "count": 1
+        },
+        {
+          "name": "Onion Knight",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Onion Knight:2|Proto Armor:1"
+    },
+    {
+      "pack": 51,
+      "slot": 5,
+      "label": "Onion Knight x5",
+      "monsters": [
+        {
+          "name": "Onion Knight",
+          "count": 5
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Onion Knight:5"
+    },
+    {
+      "pack": 51,
+      "slot": 6,
+      "label": "Magna Roader (Purple) x2",
+      "monsters": [
+        {
+          "name": "Magna Roader (Purple)",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Magna Roader (Purple):2"
+    },
+    {
+      "pack": 51,
+      "slot": 7,
+      "label": "Magna Roader (Red) x4",
+      "monsters": [
+        {
+          "name": "Magna Roader (Red)",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Magna Roader (Red):4"
+    },
+    {
+      "pack": 52,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 52,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 52,
+      "slot": 2,
+      "label": "Templar x2, Imperial Soldier x2",
+      "monsters": [
+        {
+          "name": "Templar",
+          "count": 2
+        },
+        {
+          "name": "Imperial Soldier",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Imperial Soldier:2|Templar:2"
+    },
+    {
+      "pack": 52,
+      "slot": 3,
+      "label": "Balloon x4",
+      "monsters": [
+        {
+          "name": "Balloon",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Balloon:4"
+    },
+    {
+      "pack": 52,
+      "slot": 4,
+      "label": "Imperial Soldier x2",
+      "monsters": [
+        {
+          "name": "Imperial Soldier",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Imperial Soldier:2"
+    },
+    {
+      "pack": 52,
+      "slot": 5,
+      "label": "Death Machine, Metal Hitman x4",
+      "monsters": [
+        {
+          "name": "Death Machine",
+          "count": 1
+        },
+        {
+          "name": "Metal Hitman",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Death Machine:1|Metal Hitman:4"
+    },
+    {
+      "pack": 52,
+      "slot": 6,
+      "label": "Metal Hitman x3",
+      "monsters": [
+        {
+          "name": "Metal Hitman",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Metal Hitman:3"
+    },
+    {
+      "pack": 52,
+      "slot": 7,
+      "label": "Duel Armor, Fortis",
+      "monsters": [
+        {
+          "name": "Duel Armor",
+          "count": 1
+        },
+        {
+          "name": "Fortis",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Duel Armor:1|Fortis:1"
+    },
+    {
+      "pack": 53,
+      "slot": 0,
+      "label": "Sergeant x4",
+      "monsters": [
+        {
+          "name": "Sergeant",
+          "count": 4
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Sergeant:4"
+    },
+    {
+      "pack": 53,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 53,
+      "slot": 2,
+      "label": "Sergeant",
+      "monsters": [
+        {
+          "name": "Sergeant",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Sergeant:1"
+    },
+    {
+      "pack": 53,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 53,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 53,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 53,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 53,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 54,
+      "slot": 0,
+      "label": "Behemoth King (Undead)",
+      "monsters": [
+        {
+          "name": "Behemoth King (Undead)",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Behemoth King (Undead):1"
+    },
+    {
+      "pack": 54,
+      "slot": 1,
+      "label": "Dark Force x2",
+      "monsters": [
+        {
+          "name": "Dark Force",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Dark Force:2"
+    },
+    {
+      "pack": 54,
+      "slot": 2,
+      "label": "Yojimbo x2, Dark Force",
+      "monsters": [
+        {
+          "name": "Yojimbo",
+          "count": 2
+        },
+        {
+          "name": "Dark Force",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Dark Force:1|Yojimbo:2"
+    },
+    {
+      "pack": 54,
+      "slot": 3,
+      "label": "Demon Knight, Yojimbo",
+      "monsters": [
+        {
+          "name": "Demon Knight",
+          "count": 1
+        },
+        {
+          "name": "Yojimbo",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Demon Knight:1|Yojimbo:1"
+    },
+    {
+      "pack": 54,
+      "slot": 4,
+      "label": "Outsider x2, Cherry",
+      "monsters": [
+        {
+          "name": "Outsider",
+          "count": 2
+        },
+        {
+          "name": "Cherry",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Cherry:1|Outsider:2"
+    },
+    {
+      "pack": 54,
+      "slot": 5,
+      "label": "Mover x3",
+      "monsters": [
+        {
+          "name": "Mover",
+          "count": 3
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Mover:3"
+    },
+    {
+      "pack": 54,
+      "slot": 6,
+      "label": "Muud Suud",
+      "monsters": [
+        {
+          "name": "Muud Suud",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Muud Suud:1"
+    },
+    {
+      "pack": 54,
+      "slot": 7,
+      "label": "Daedalus x2",
+      "monsters": [
+        {
+          "name": "Daedalus",
+          "count": 2
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Daedalus:2"
+    },
+    {
+      "pack": 55,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 55,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 55,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 55,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 55,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 55,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 55,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 55,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 56,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 56,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 56,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 56,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 56,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 56,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 56,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 56,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 57,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 57,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 57,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 57,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 57,
+      "slot": 4,
+      "label": "Behemoth King (Living)",
+      "monsters": [
+        {
+          "name": "Behemoth King (Living)",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Behemoth King (Living):1"
+    },
+    {
+      "pack": 57,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 57,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 57,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 58,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 58,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 58,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 58,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 58,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 58,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 58,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 58,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 59,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 59,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 59,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 59,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 59,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 59,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 59,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 59,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 60,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 60,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 60,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 60,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 60,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 60,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 60,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 60,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 61,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 61,
+      "slot": 1,
+      "label": "Holy Dragon",
+      "monsters": [
+        {
+          "name": "Holy Dragon",
+          "count": 1
+        }
+      ],
+      "empty": false,
+      "multisetKey": "Holy Dragon:1"
+    },
+    {
+      "pack": 61,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 61,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 61,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 61,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 61,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 61,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 62,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 62,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 62,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 62,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 62,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 62,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 62,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 62,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 63,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 63,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 63,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 63,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 63,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 63,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 63,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 63,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 64,
+      "slot": 0,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 64,
+      "slot": 1,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 64,
+      "slot": 2,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 64,
+      "slot": 3,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 64,
+      "slot": 4,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 64,
+      "slot": 5,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 64,
+      "slot": 6,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    },
+    {
+      "pack": 64,
+      "slot": 7,
+      "label": "None",
+      "monsters": [],
+      "empty": true,
+      "multisetKey": ""
+    }
+  ],
+  "monsterNames": [
+    "Acrophies",
+    "Actinian",
+    "Adamankary",
+    "Aepyornis",
+    "Ahriman",
+    "Al Jabr",
+    "Alacran",
+    "Alluring Rider",
+    "Amduscias",
+    "Anemone",
+    "Angel Whisper",
+    "Anguiform",
+    "Antares",
+    "Apocrypha",
+    "Armored Weapon",
+    "Aspidochelon",
+    "Aspiran",
+    "Baalzephon",
+    "Balloon",
+    "Bandit",
+    "Basilisk",
+    "Behemoth",
+    "Behemoth King (Living)",
+    "Behemoth King (Undead)",
+    "Belmodar",
+    "Belzecue",
+    "Black Dragon",
+    "Blade Dancer",
+    "Bloodfang",
+    "Bogy",
+    "Bomb",
+    "Bonnacon",
+    "Borghese",
+    "Brachiosaur",
+    "Brainpan",
+    "Briareus",
+    "Bug",
+    "Cactuar",
+    "Caladrius",
+    "Cancer",
+    "Cartagra",
+    "Chaos Dragon",
+    "Chaser",
+    "Cherry",
+    "Chimera",
+    "Chippirabbit",
+    "Cirpius",
+    "Cloud",
+    "Cloudwraith",
+    "Clymenus",
+    "Coco",
+    "Coeurl Cat",
+    "Commander",
+    "Corporal",
+    "Covert",
+    "Crawler",
+    "Creature",
+    "Cruller",
+    "Crusher",
+    "Daedalus",
+    "Dante",
+    "Dark Force",
+    "Darkside",
+    "Darkwind",
+    "Death Machine",
+    "Death Warden",
+    "Deepeye",
+    "Delta Beetle",
+    "Demon Knight",
+    "Desert Hare",
+    "Destroyer",
+    "Devil",
+    "Devil Fist",
+    "Devoahan",
+    "Devourer",
+    "Doberman",
+    "Don",
+    "Dragon",
+    "Dropper",
+    "Duel Armor",
+    "Enuo",
+    "Eukaryote",
+    "Exocite",
+    "Exoray",
+    "Face",
+    "Fafnir",
+    "Fidor",
+    "Fiend Dragon",
+    "Figaro Lizard",
+    "Flan",
+    "Foper",
+    "Fortis",
+    "Fossil Dragon",
+    "Galypdes",
+    "Gamma",
+    "Garm",
+    "General",
+    "Ghost",
+    "Gigantoad",
+    "Gigantos",
+    "Glasya Labolas",
+    "Gloomwind",
+    "Gobbledygook",
+    "Goetia",
+    "Gold Bear",
+    "Gorgias",
+    "Gorgimera",
+    "Grasswyrm",
+    "Great Behemoth",
+    "Great Malboro",
+    "Greater Mantis",
+    "Grenade",
+    "Guard",
+    "Guard Leader",
+    "Harvester",
+    "Heavy Armor",
+    "Hell's Rider",
+    "Hill Gigas",
+    "Holy Dragon",
+    "Hornet",
+    "Humpty",
+    "Hunting Hound",
+    "Illuyankas",
+    "Imperial Elite",
+    "Imperial Soldier",
+    "InnoSent",
+    "Intangir",
+    "Io",
+    "Iron Fist",
+    "Joker",
+    "Junk",
+    "Kamui",
+    "Killer Mantis",
+    "Knotty",
+    "Land Grillon",
+    "Land Ray",
+    "Landworm",
+    "Leaf Bunny",
+    "Leap Frog",
+    "Lenergia",
+    "Lesser Lopros",
+    "Lich",
+    "Litwor Chicken",
+    "Living Dead",
+    "Lizard",
+    "Lukhavi",
+    "Luna Wolf",
+    "Lunatys",
+    "Luridan",
+    "Lycaon",
+    "Magic Urn",
+    "Magitek Armor",
+    "Magna Roader (Brown)",
+    "Magna Roader (Purple)",
+    "Magna Roader (Red)",
+    "Magna Roader (Yellow)",
+    "Mahadeva",
+    "Malboro",
+    "Mandrake",
+    "Marchosias",
+    "Medusa Chicken",
+    "Megalodoth",
+    "Metal Hitman",
+    "Misfit",
+    "Misty",
+    "Moonform",
+    "Mousse",
+    "Mover",
+    "Mu",
+    "Mugbear",
+    "Murussu",
+    "Muud Suud",
+    "Nautiloid",
+    "Neck Hunter",
+    "Necromancer",
+    "Nettlehopper",
+    "Nightwalker",
+    "Ninja",
+    "Oceanus",
+    "Onion Dasher",
+    "Onion Knight",
+    "Ouroboros",
+    "Outcast",
+    "Outsider",
+    "Oversoul",
+    "Pandora",
+    "Paraladia",
+    "Parasite",
+    "Peeper",
+    "Platinum Dragon",
+    "Pluto Armor",
+    "Poplium",
+    "Primeval Dragon",
+    "Proto Armor",
+    "Provoker",
+    "Psychos",
+    "Punisher",
+    "Purusa",
+    "Rafflesia",
+    "Rock Wasp",
+    "Rukh",
+    "Samurai",
+    "Sand Ray",
+    "Sandhorse",
+    "Satellite",
+    "Schmidt",
+    "Scorpion",
+    "Seaflower",
+    "Sergeant",
+    "Shambling Corpse",
+    "Silver Lobo",
+    "Skeletal Horror",
+    "Sky Armor",
+    "Slagworm",
+    "Sorath",
+    "Specter",
+    "Spitfire",
+    "Sprinter",
+    "Spritzer",
+    "Still Life",
+    "Stray Cat",
+    "Stunner",
+    "Suriander",
+    "Templar",
+    "Test Rider",
+    "Tonberries",
+    "Tonberry",
+    "Trapper",
+    "Trillium",
+    "Tumbleweed",
+    "Twinscythe",
+    "Tyrannosaur",
+    "Tzakmaqiel",
+    "Unseelie",
+    "Urok",
+    "Valeor",
+    "Vampire Thorn",
+    "Vasegiatta",
+    "Vector Chimera",
+    "Vector Hound",
+    "Vector Lythos",
+    "Veil Dancer",
+    "Venobennu",
+    "Vulture",
+    "Warlock",
+    "Wartpuck",
+    "Weredragon",
+    "Wererat",
+    "Wild Rat",
+    "Wizard",
+    "Wyvern",
+    "Yojimbo",
+    "Zaghrem",
+    "Zeveak",
+    "Zokka",
+    "Zombie Dragon"
+  ]
+}
