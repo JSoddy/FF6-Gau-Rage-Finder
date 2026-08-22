@@ -6,6 +6,7 @@ import {
   getNextFivePacks,
   getWantRageETAs,
   formationHasUnearnedRage,
+  formationHasWantedRage,
 } from "./forecast";
 import {
   resolveObservation,
@@ -255,10 +256,20 @@ describe("forecast", () => {
     expect(missing?.inNextFive).toBe(false);
   });
 
-  it("checks if formation contains unearned rage", () => {
+  it("checks if formation contains unearned or wanted rage", () => {
     const formation = getFormation(1, 0)!;
     expect(formationHasUnearnedRage(formation, new Set())).toBe(true);
     expect(formationHasUnearnedRage(formation, new Set(["Silver Lobo"]))).toBe(false);
+    expect(
+      formationHasWantedRage(formation, new Set(["Silver Lobo"]), new Set())
+    ).toBe(true);
+    expect(
+      formationHasWantedRage(
+        formation,
+        new Set(["Silver Lobo"]),
+        new Set(["Silver Lobo"])
+      )
+    ).toBe(false);
   });
 
   it("checks if pack contains a monster", () => {

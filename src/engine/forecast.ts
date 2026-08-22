@@ -78,3 +78,13 @@ export function formationHasUnearnedRage(
 ): boolean {
   return formation.monsters.some((m) => !have.has(m.name));
 }
+
+export function formationHasWantedRage(
+  formation: import("./types").Formation,
+  want: Set<string>,
+  have: Set<string>
+): boolean {
+  return formation.monsters.some(
+    (m) => want.has(m.name) && !have.has(m.name)
+  );
+}

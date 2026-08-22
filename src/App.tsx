@@ -317,11 +317,12 @@ export default function App() {
 
               {position.locked && currentPack != null && (
                 <>
-                  <UpcomingPacks
-                    packs={upcoming}
-                    have={have}
-                    onSelectFormation={handleSelectFormation}
-                  />
+                <UpcomingPacks
+                  packs={upcoming}
+                  have={have}
+                  want={want}
+                  onSelectFormation={handleSelectFormation}
+                />
                   <MonsterEntry
                     onSubmit={handleSubmitEncounter}
                     error={entryError}

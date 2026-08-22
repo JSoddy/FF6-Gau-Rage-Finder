@@ -15,8 +15,10 @@
   --panel-border: rgba(61, 104, 64, 0.35);
   --surface-muted: rgba(143, 208, 85, 0.15);
   --surface-stripe: rgba(143, 208, 85, 0.12);
-  --accent-unearned: #3d7840;
-  --accent-unearned-bg: rgba(143, 208, 85, 0.35);
+  --accent-wanted: #3d7840;
+  --accent-wanted-bg: rgba(143, 208, 85, 0.35);
+  --accent-unearned: #7cb86a;
+  --accent-unearned-bg: rgba(143, 208, 85, 0.14);
   --accent-want-soon: #b83828;
   --shadow: 0 2px 12px rgba(40, 72, 120, 0.2);
 }
@@ -113,17 +115,26 @@ body::after {
   color: var(--text-primary);
 }
 
+.formation-cell.formation--wanted {
+  border: 2px solid var(--accent-wanted);
+  background: var(--accent-wanted-bg);
+}
+
 .formation-cell.formation--unearned {
-  border: 2px solid var(--accent-unearned);
+  border: 1px solid var(--panel-border);
   background: var(--accent-unearned-bg);
 }
 
-.formation-cell:hover:not(.formation--unearned) {
+.formation-cell:hover:not(.formation--wanted):not(.formation--unearned) {
   background: var(--surface-muted);
 }
 
-.formation-cell.formation--unearned:hover {
+.formation-cell.formation--wanted:hover {
   background: rgba(143, 208, 85, 0.5);
+}
+
+.formation-cell.formation--unearned:hover {
+  background: rgba(143, 208, 85, 0.28);
 }
 
 .want-sidebar {
@@ -180,6 +191,16 @@ body::after {
 .middle-row__main {
   flex: 1;
   min-width: 0;
+}
+
+.encounter-history-section {
+  margin-bottom: 0.75rem;
+}
+
+.encounter-history__heading {
+  margin: 0 0 0.85rem;
+  font-size: 1.15rem;
+  color: var(--veldt-green-dark);
 }
 
 .encounter-history {
@@ -271,9 +292,36 @@ body::after {
   margin: 1rem 0;
 }
 
+.upcoming-packs__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
 .upcoming-packs h2 {
+  margin: 0;
   color: var(--veldt-green-dark);
   font-size: 1.15rem;
+}
+
+.formation-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+}
+
+.formation-legend__item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.formation-legend__swatch {
+  cursor: default;
+  pointer-events: none;
+  font-size: 0.8rem;
 }
 
 .pack-row {
