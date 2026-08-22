@@ -28,9 +28,21 @@ describe("rageAbilities data (Complete Compendium)", () => {
 
   it("should cover all 256 selectable monsters from the Veldt tracker", () => {
     expect(formations.monsterNames).toHaveLength(256);
+
+    function abilityMentionsMonster(
+      monstersField: string,
+      monsterName: string
+    ): boolean {
+      // Match as a discrete token so "Mu" does not match "Murussu"
+      // and "Tonberry" does not match "Tonberries".
+      const escaped = monsterName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const re = new RegExp(`(^|[^\\w'])${escaped}(?=[^\\w']|$)`);
+      return re.test(monstersField);
+    }
+
     for (const monsterName of formations.monsterNames) {
       const isFound = ALL_RAGE_ABILITIES.some((a) =>
-        a.monsters.includes(monsterName)
+        abilityMentionsMonster(a.monsters, monsterName)
       );
       expect(
         isFound,

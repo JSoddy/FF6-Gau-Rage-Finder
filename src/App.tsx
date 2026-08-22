@@ -42,6 +42,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<TabKey>("tracker");
   const [showOnlyWant, setShowOnlyWant] = useState(false);
   const [entryError, setEntryError] = useState<string | null>(null);
+  const [importError, setImportError] = useState<string | null>(null);
 
   const have = useMemo(() => toSet(state.have), [state.have]);
   const want = useMemo(() => toSet(state.want), [state.want]);
@@ -190,16 +191,32 @@ export default function App() {
         try {
           JSON.parse(text);
         } catch {
-          setEntryError("Invalid import file.");
+          setImportError("Invalid import file.");
           return;
         }
         setState(importState(text));
+        setImportError(null);
         setEntryError(null);
       };
       reader.readAsText(file);
     };
     input.click();
   }
+
+  const tabs: { key: TabKey; label: string; panelId: string }[] = [
+    { key: "tracker", label: "🗺️ Veldt Tracker", panelId: "panel-tracker" },
+    {
+      key: "mechanics",
+      label: "📖 How the Veldt Works",
+      panelId: "panel-mechanics",
+    },
+    { key: "guide", label: "⭐ High-Value Rages", panelId: "panel-guide" },
+    {
+      key: "abilities",
+      label: "⚡ Rage Abilities",
+      panelId: "panel-abilities",
+    },
+  ];
 
   return (
     <div className="app">
@@ -217,114 +234,131 @@ export default function App() {
         </div>
       </header>
 
-      <nav className="nav-tabs" aria-label="Main Navigation">
-        <button
-          type="button"
-          className={`nav-tab ${
-            activeTab === "tracker" ? "nav-tab--active" : ""
-          }`}
-          onClick={() => setActiveTab("tracker")}
-        >
-          🗺️ Veldt Tracker
-        </button>
-        <button
-          type="button"
-          className={`nav-tab ${
-            activeTab === "mechanics" ? "nav-tab--active" : ""
-          }`}
-          onClick={() => setActiveTab("mechanics")}
-        >
-          📖 How the Veldt Works
-        </button>
-        <button
-          type="button"
-          className={`nav-tab ${
-            activeTab === "guide" ? "nav-tab--active" : ""
-          }`}
-          onClick={() => setActiveTab("guide")}
-        >
-          ⭐ High-Value Rages
-        </button>
-        <button
-          type="button"
-          className={`nav-tab ${
-            activeTab === "abilities" ? "nav-tab--active" : ""
-          }`}
-          onClick={() => setActiveTab("abilities")}
-        >
-          ⚡ Rage Abilities
-        </button>
+      <nav className="nav-tabs" role="tablist" aria-label="Main Navigation">
+        {tabs.map((tab) => (
+          <button
+            key={tab.key}
+            type="button"
+            role="tab"
+            id={`tab-${tab.key}`}
+            aria-selected={activeTab === tab.key}
+            aria-controls={tab.panelId}
+            tabIndex={activeTab === tab.key ? 0 : -1}
+            className={`nav-tab ${
+              activeTab === tab.key ? "nav-tab--active" : ""
+            }`}
+            onClick={() => setActiveTab(tab.key)}
+          >
+            {tab.label}
+          </button>
+        ))}
       </nav>
 
       <main className="app-panel">
-        {activeTab === "tracker" && (
-          <>
-            <div className="toolbar">
-              <button type="button" onClick={handleClearHistory}>
-                Clear history
-              </button>
-              <button type="button" onClick={handleExport}>
-                Export
-              </button>
-              <button type="button" onClick={handleImport}>
-                Import
-              </button>
-            </div>
+        <div
+          id="panel-tracker"
+          role="tabpanel"
+          aria-labelledby="tab-tracker"
+          hidden={activeTab !== "tracker"}
+        >
+          {activeTab === "tracker" && (
+            <>
+              <div className="toolbar">
+                <button type="button" onClick={handleClearHistory}>
+                  Clear history
+                </button>
+                <button type="button" onClick={handleExport}>
+                  Export
+                </button>
+                <button type="button" onClick={handleImport}>
+                  Import
+                </button>
+              </div>
 
-            <RageTable
-              have={have}
-              want={want}
-              showOnlyWant={showOnlyWant}
-              onToggleHave={toggleHave}
-              onToggleWant={toggleWant}
-              onToggleFilter={() => setShowOnlyWant((v) => !v)}
-              onSelectAllHighValue={handleSelectAllHighValue}
-              onDeselectAllHighValue={handleDeselectAllHighValue}
-            />
+              {importError && (
+                <p className="error-msg error-msg--banner" role="alert">
+                  {importError}
+                </p>
+              )}
 
-            <div className="middle-row">
-              <div className="middle-row__main">
-                <EncounterHistory
-                  history={position.resolvedHistory}
-                  onRemoveLast={handleRemoveLast}
-                />
-                {!position.locked && (
+              <RageTable
+                have={have}
+                want={want}
+                showOnlyWant={showOnlyWant}
+                onToggleHave={toggleHave}
+                onToggleWant={toggleWant}
+                onToggleFilter={() => setShowOnlyWant((v) => !v)}
+                onSelectAllHighValue={handleSelectAllHighValue}
+                onDeselectAllHighValue={handleDeselectAllHighValue}
+              />
+
+              <div className="middle-row">
+                <div className="middle-row__main">
+                  <EncounterHistory
+                    history={position.resolvedHistory}
+                    onRemoveLast={handleRemoveLast}
+                  />
+                  {!position.locked && (
+                    <MonsterEntry
+                      onSubmit={handleSubmitEncounter}
+                      error={entryError}
+                      positionLocked={false}
+                    />
+                  )}
+                  {!position.locked && position.candidatePacks.length > 1 && (
+                    <p className="status-msg">
+                      {position.candidatePacks.length} possible packs — log
+                      another encounter to narrow down.
+                    </p>
+                  )}
+                </div>
+                <WantCountdown etas={etas} locked={position.locked} />
+              </div>
+
+              {position.locked && currentPack != null && (
+                <>
+                  <UpcomingPacks
+                    packs={upcoming}
+                    have={have}
+                    onSelectFormation={handleSelectFormation}
+                  />
                   <MonsterEntry
                     onSubmit={handleSubmitEncounter}
                     error={entryError}
-                    positionLocked={false}
+                    positionLocked
                   />
-                )}
-                {!position.locked && position.candidatePacks.length > 1 && (
-                  <p className="status-msg">
-                    {position.candidatePacks.length} possible packs — log
-                    another encounter to narrow down.
-                  </p>
-                )}
-              </div>
-              <WantCountdown etas={etas} locked={position.locked} />
-            </div>
+                </>
+              )}
+            </>
+          )}
+        </div>
 
-            {position.locked && currentPack != null && (
-              <>
-                <UpcomingPacks
-                  packs={upcoming}
-                  have={have}
-                  onSelectFormation={handleSelectFormation}
-                />
-                <MonsterEntry
-                  onSubmit={handleSubmitEncounter}
-                  error={entryError}
-                  positionLocked
-                />
-              </>
-            )}
-          </>
-        )}
+        <div
+          id="panel-mechanics"
+          role="tabpanel"
+          aria-labelledby="tab-mechanics"
+          hidden={activeTab !== "mechanics"}
+        >
+          {activeTab === "mechanics" && <VeldtGuide />}
+        </div>
 
-        {activeTab === "mechanics" && <VeldtGuide />}
-        {activeTab === "guide" && <RageGuide />}
-        {activeTab === "abilities" && <RageAbilities />}
+        <div
+          id="panel-guide"
+          role="tabpanel"
+          aria-labelledby="tab-guide"
+          hidden={activeTab !== "guide"}
+        >
+          {activeTab === "guide" && <RageGuide />}
+        </div>
+
+        <div
+          id="panel-abilities"
+          role="tabpanel"
+          aria-labelledby="tab-abilities"
+          hidden={activeTab !== "abilities"}
+        >
+          {activeTab === "abilities" && <RageAbilities />}
+        </div>
       </main>
 
       <footer className="app-footer">

@@ -34,6 +34,10 @@ describe("VeldtGuide component", () => {
     expect(container.textContent).toContain("The Fast-Forward Flee");
     expect(container.textContent).toContain("The Off-Veldt RNG Reshuffle");
     expect(container.textContent).toContain("Safe Gau Leaping & Retrieval");
+    expect(container.textContent).toContain("Note on this tracker");
+    expect(container.textContent).toContain(
+      "all non-empty formations in each pack"
+    );
 
     act(() => {
       root.unmount();

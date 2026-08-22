@@ -56,19 +56,32 @@ describe("App Tab Navigation, Bulk Select & Compendium Flow", () => {
       hideAcquiredCheckbox.click();
     });
 
-    // Verify 4 navigation tabs exist
-    const tabs = container.querySelectorAll("button.nav-tab");
+    // Verify 4 navigation tabs exist with tab semantics
+    const tabs = container.querySelectorAll('[role="tab"]');
     expect(tabs.length).toBe(4);
+    expect(tabs[0].getAttribute("aria-selected")).toBe("true");
+    expect(tabs[1].getAttribute("aria-selected")).toBe("false");
+
+    // Export/Import available on Tracker tab
+    const toolbar = container.querySelector(".toolbar");
+    expect(toolbar?.textContent).toContain("Export");
+    expect(toolbar?.textContent).toContain("Import");
+    expect(toolbar?.textContent).toContain("Clear history");
 
     // Switch to Tab 2: How the Veldt Works
     act(() => {
       (tabs[1] as HTMLButtonElement).click();
     });
 
+    expect(tabs[0].getAttribute("aria-selected")).toBe("false");
+    expect(tabs[1].getAttribute("aria-selected")).toBe("true");
+    expect(container.querySelector(".toolbar")).toBeNull();
+
     expect(container.textContent).toContain("How the Veldt & Rages Work");
     expect(container.textContent).toContain("The 64-Pack Rotation Engine");
     expect(container.textContent).toContain("The Off-Veldt RNG Reshuffle");
     expect(container.textContent).toContain("How to Use This Tracker");
+    expect(container.textContent).toContain("Note on this tracker");
 
     // Switch to Tab 3: High-Value Rages Guide
     act(() => {

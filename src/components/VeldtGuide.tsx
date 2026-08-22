@@ -67,6 +67,12 @@ export function VeldtGuide() {
               in the sequence.
             </li>
             <li>
+              <strong>Note on this tracker:</strong> The Veldt Tracker shows{" "}
+              <em>all</em> non-empty formations in each pack, not only ones you
+              have unlocked. Use it to plan ahead; the game may skip packs or
+              slots you have not flagged elsewhere.
+            </li>
+            <li>
               <strong>The 8-Slot Roll:</strong> Each pack contains up to 8
               specific monster formations. When the game arrives at a pack, it
               rolls an RNG check among only the formations you have unlocked in
