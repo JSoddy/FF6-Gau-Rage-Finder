@@ -59,7 +59,7 @@ body::after {
 }
 
 .app {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -380,6 +380,24 @@ body::after {
   margin-bottom: 0.5rem;
 }
 
+.btn-select-high-value {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--veldt-green-dark);
+  border-radius: 4px;
+  background: linear-gradient(180deg, var(--veldt-green-bright) 0%, var(--veldt-green-mid) 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(40, 72, 60, 0.2);
+  transition: filter 0.15s ease;
+  margin-left: auto;
+}
+
+.btn-select-high-value:hover {
+  filter: brightness(1.08);
+}
+
 .rage-search {
   padding: 0.35rem 0.5rem;
   font-size: 0.9rem;
@@ -405,6 +423,423 @@ body::after {
 .entry-actions button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.nav-tab {
+  flex: 1;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  background: rgba(255, 252, 245, 0.7);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  text-align: center;
+}
+
+.nav-tab:hover {
+  background: var(--surface-muted);
+  color: var(--veldt-green-dark);
+}
+
+.nav-tab--active {
+  background: var(--panel-bg);
+  color: var(--veldt-green-dark);
+  border-color: var(--veldt-green-dark);
+  box-shadow: var(--shadow);
+}
+
+/* High-Value Rages Guide */
+.guide-view {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.guide-hero {
+  background: var(--surface-muted);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.guide-hero h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  color: var(--veldt-green-dark);
+}
+
+.guide-hero p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.guide-hero__note {
+  margin-top: 0.6rem !important;
+  font-size: 0.9rem !important;
+  color: var(--text-muted);
+}
+
+.guide-hero__note a {
+  color: var(--veldt-blue-deep);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.guide-hero__note a:hover {
+  color: var(--veldt-blue-mid);
+}
+
+.guide-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(40, 72, 60, 0.08);
+}
+
+.guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.guide-table th {
+  position: sticky;
+  top: 0;
+  background: var(--veldt-green-dark);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  z-index: 2;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.guide-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(61, 104, 64, 0.15);
+  vertical-align: top;
+}
+
+.guide-table tbody tr:nth-child(even) {
+  background: var(--surface-stripe);
+}
+
+.guide-table tbody tr:hover {
+  background: var(--surface-muted);
+}
+
+.guide-cell__monster {
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+.guide-tag {
+  display: inline-block;
+  background: rgba(40, 72, 168, 0.08);
+  border: 1px solid rgba(40, 72, 168, 0.2);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.84rem;
+  color: var(--veldt-blue-deep);
+  line-height: 1.35;
+}
+
+.guide-ability-badge {
+  display: inline-block;
+  background: rgba(184, 56, 40, 0.09);
+  border: 1px solid rgba(184, 56, 40, 0.25);
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  font-weight: 600;
+  font-size: 0.86rem;
+  color: var(--accent-want-soon);
+}
+
+.guide-cell__impact {
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+/* Veldt Mechanics Guide Page */
+.veldt-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 1rem;
+}
+
+.guide-card {
+  background: #fff;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 4px rgba(40, 72, 60, 0.08);
+}
+
+.guide-card--wide {
+  grid-column: 1 / -1;
+}
+
+.guide-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+  border-bottom: 2px solid var(--surface-muted);
+  padding-bottom: 0.5rem;
+}
+
+.guide-card__icon {
+  font-size: 1.35rem;
+}
+
+.guide-card__header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--veldt-green-dark);
+}
+
+.guide-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+  font-size: 0.92rem;
+}
+
+.guide-list strong {
+  color: var(--veldt-green-dark);
+}
+
+.guide-tactics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.tactic-item {
+  background: var(--surface-stripe);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.tactic-item h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: var(--veldt-green-dark);
+}
+
+.tactic-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--text-primary);
+}
+
+.tactic-steps {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.guide-workflow-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.workflow-step {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  background: var(--surface-muted);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.workflow-step__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--veldt-green-dark);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.workflow-step strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--veldt-green-dark);
+  font-size: 0.95rem;
+}
+
+.workflow-step p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+/* Rage Ability Compendium Page */
+.abilities-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.abilities-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill-btn {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border: 1px solid var(--panel-border);
+  border-radius: 20px;
+  background: rgba(255, 252, 245, 0.8);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pill-btn:hover {
+  background: var(--surface-muted);
+  color: var(--veldt-green-dark);
+}
+
+.pill-btn--active {
+  background: var(--veldt-green-dark);
+  color: #fff;
+  border-color: var(--veldt-green-dark);
+  box-shadow: 0 1px 4px rgba(40, 72, 60, 0.25);
+}
+
+.abilities-search {
+  flex-grow: 1;
+  max-width: 320px;
+}
+
+.abilities-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ability-category-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--surface-muted);
+  border: 1px solid var(--panel-border);
+  border-radius: 6px;
+}
+
+.category-header__icon {
+  font-size: 1.4rem;
+}
+
+.category-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--veldt-green-dark);
+}
+
+.category-header__desc {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.ability-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(40, 72, 60, 0.08);
+}
+
+.ability-cell__name {
+  white-space: nowrap;
+  font-size: 0.95rem;
+  color: var(--veldt-green-dark);
+}
+
+.ability-cell__effect {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--text-primary);
+}
+
+.ability-cell__monsters {
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.ability-monsters-text {
+  color: var(--text-muted);
+}
+
+.abilities-empty {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background: #fff;
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 .app-footer {
@@ -437,5 +872,9 @@ body::after {
   .want-sidebar {
     max-width: none;
     width: 100%;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
   }
 }

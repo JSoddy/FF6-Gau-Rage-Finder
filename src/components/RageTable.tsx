@@ -1,5 +1,9 @@
 import { useMemo, useState } from "react";
 import { monsterNames } from "../engine/formations";
+import {
+  HIGH_VALUE_MONSTER_NAMES,
+  HIGH_VALUE_RAGES,
+} from "../data/highValueRages";
 
 interface RageTableProps {
   have: Set<string>;
@@ -8,6 +12,8 @@ interface RageTableProps {
   onToggleHave: (name: string) => void;
   onToggleWant: (name: string) => void;
   onToggleFilter: () => void;
+  onSelectAllHighValue?: () => void;
+  onDeselectAllHighValue?: () => void;
 }
 
 export function RageTable({
@@ -17,13 +23,27 @@ export function RageTable({
   onToggleHave,
   onToggleWant,
   onToggleFilter,
+  onSelectAllHighValue,
+  onDeselectAllHighValue,
 }: RageTableProps) {
   const [search, setSearch] = useState("");
+  const [hideAcquired, setHideAcquired] = useState(false);
+
+  const wantedHighValueCount = useMemo(
+    () => HIGH_VALUE_MONSTER_NAMES.filter((name) => want.has(name)).length,
+    [want]
+  );
+
+  const allHighValueWanted = wantedHighValueCount === HIGH_VALUE_RAGES.length;
 
   const names = useMemo(() => {
     let list = showOnlyWant
       ? monsterNames.filter((n) => want.has(n))
       : monsterNames;
+
+    if (hideAcquired) {
+      list = list.filter((n) => !have.has(n));
+    }
 
     const query = search.trim().toLowerCase();
     if (query) {
@@ -31,7 +51,7 @@ export function RageTable({
     }
 
     return list;
-  }, [showOnlyWant, want, search]);
+  }, [showOnlyWant, hideAcquired, have, want, search]);
 
   return (
     <section>
@@ -51,6 +71,29 @@ export function RageTable({
           />{" "}
           Show only Want
         </label>
+        <label>
+          <input
+            type="checkbox"
+            checked={hideAcquired}
+            onChange={(e) => setHideAcquired(e.target.checked)}
+          />{" "}
+          Hide acquired
+        </label>
+        {onSelectAllHighValue && (
+          <button
+            type="button"
+            className="btn-select-high-value"
+            onClick={
+              allHighValueWanted
+                ? onDeselectAllHighValue
+                : onSelectAllHighValue
+            }
+          >
+            {allHighValueWanted
+              ? "Clear High-Value from Want"
+              : `Select High-Value (${wantedHighValueCount}/${HIGH_VALUE_RAGES.length})`}
+          </button>
+        )}
       </div>
       <div className="rage-table-wrap">
         <table className="rage-table">

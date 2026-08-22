@@ -12,6 +12,9 @@ import {
 } from "./engine/locate";
 import { multisetKey } from "./engine/multiset";
 import { RageTable } from "./components/RageTable";
+import { RageGuide } from "./components/RageGuide";
+import { VeldtGuide } from "./components/VeldtGuide";
+import { RageAbilities } from "./components/RageAbilities";
 import { EncounterHistory } from "./components/EncounterHistory";
 import { WantCountdown } from "./components/WantCountdown";
 import { UpcomingPacks } from "./components/UpcomingPacks";
@@ -24,6 +27,7 @@ import {
   saveState,
   type AppState,
 } from "./storage/state";
+import { HIGH_VALUE_MONSTER_NAMES } from "./data/highValueRages";
 import { createId } from "./utils/id";
 import "./app.css";
 
@@ -31,8 +35,11 @@ function toSet(arr: string[]): Set<string> {
   return new Set(arr);
 }
 
+type TabKey = "tracker" | "mechanics" | "guide" | "abilities";
+
 export default function App() {
   const [state, setState] = useState<AppState>(() => loadState());
+  const [activeTab, setActiveTab] = useState<TabKey>("tracker");
   const [showOnlyWant, setShowOnlyWant] = useState(false);
   const [entryError, setEntryError] = useState<string | null>(null);
 
@@ -76,6 +83,22 @@ export default function App() {
     const next = new Set(state.want);
     if (next.has(name)) next.delete(name);
     else next.add(name);
+    updateState({ want: [...next] });
+  }
+
+  function handleSelectAllHighValue() {
+    const next = new Set(state.want);
+    for (const name of HIGH_VALUE_MONSTER_NAMES) {
+      next.add(name);
+    }
+    updateState({ want: [...next] });
+  }
+
+  function handleDeselectAllHighValue() {
+    const next = new Set(state.want);
+    for (const name of HIGH_VALUE_MONSTER_NAMES) {
+      next.delete(name);
+    }
     updateState({ want: [...next] });
   }
 
@@ -194,66 +217,115 @@ export default function App() {
         </div>
       </header>
 
-      <div className="app-panel">
-        <div className="toolbar">
-          <button type="button" onClick={handleClearHistory}>
-            Clear history
-          </button>
-          <button type="button" onClick={handleExport}>
-            Export
-          </button>
-          <button type="button" onClick={handleImport}>
-            Import
-          </button>
-        </div>
+      <nav className="nav-tabs" aria-label="Main Navigation">
+        <button
+          type="button"
+          className={`nav-tab ${
+            activeTab === "tracker" ? "nav-tab--active" : ""
+          }`}
+          onClick={() => setActiveTab("tracker")}
+        >
+          🗺️ Veldt Tracker
+        </button>
+        <button
+          type="button"
+          className={`nav-tab ${
+            activeTab === "mechanics" ? "nav-tab--active" : ""
+          }`}
+          onClick={() => setActiveTab("mechanics")}
+        >
+          📖 How the Veldt Works
+        </button>
+        <button
+          type="button"
+          className={`nav-tab ${
+            activeTab === "guide" ? "nav-tab--active" : ""
+          }`}
+          onClick={() => setActiveTab("guide")}
+        >
+          ⭐ High-Value Rages
+        </button>
+        <button
+          type="button"
+          className={`nav-tab ${
+            activeTab === "abilities" ? "nav-tab--active" : ""
+          }`}
+          onClick={() => setActiveTab("abilities")}
+        >
+          ⚡ Rage Abilities
+        </button>
+      </nav>
 
-        <RageTable
-          have={have}
-          want={want}
-          showOnlyWant={showOnlyWant}
-          onToggleHave={toggleHave}
-          onToggleWant={toggleWant}
-          onToggleFilter={() => setShowOnlyWant((v) => !v)}
-        />
-
-        <div className="middle-row">
-          <div className="middle-row__main">
-            <EncounterHistory
-              history={position.resolvedHistory}
-              onRemoveLast={handleRemoveLast}
-            />
-            {!position.locked && (
-              <MonsterEntry
-                onSubmit={handleSubmitEncounter}
-                error={entryError}
-                positionLocked={false}
-              />
-            )}
-            {!position.locked && position.candidatePacks.length > 1 && (
-              <p className="status-msg">
-                {position.candidatePacks.length} possible packs — log another
-                encounter to narrow down.
-              </p>
-            )}
-          </div>
-          <WantCountdown etas={etas} locked={position.locked} />
-        </div>
-
-        {position.locked && currentPack != null && (
+      <main className="app-panel">
+        {activeTab === "tracker" && (
           <>
-            <UpcomingPacks
-              packs={upcoming}
+            <div className="toolbar">
+              <button type="button" onClick={handleClearHistory}>
+                Clear history
+              </button>
+              <button type="button" onClick={handleExport}>
+                Export
+              </button>
+              <button type="button" onClick={handleImport}>
+                Import
+              </button>
+            </div>
+
+            <RageTable
               have={have}
-              onSelectFormation={handleSelectFormation}
+              want={want}
+              showOnlyWant={showOnlyWant}
+              onToggleHave={toggleHave}
+              onToggleWant={toggleWant}
+              onToggleFilter={() => setShowOnlyWant((v) => !v)}
+              onSelectAllHighValue={handleSelectAllHighValue}
+              onDeselectAllHighValue={handleDeselectAllHighValue}
             />
-            <MonsterEntry
-              onSubmit={handleSubmitEncounter}
-              error={entryError}
-              positionLocked
-            />
+
+            <div className="middle-row">
+              <div className="middle-row__main">
+                <EncounterHistory
+                  history={position.resolvedHistory}
+                  onRemoveLast={handleRemoveLast}
+                />
+                {!position.locked && (
+                  <MonsterEntry
+                    onSubmit={handleSubmitEncounter}
+                    error={entryError}
+                    positionLocked={false}
+                  />
+                )}
+                {!position.locked && position.candidatePacks.length > 1 && (
+                  <p className="status-msg">
+                    {position.candidatePacks.length} possible packs — log
+                    another encounter to narrow down.
+                  </p>
+                )}
+              </div>
+              <WantCountdown etas={etas} locked={position.locked} />
+            </div>
+
+            {position.locked && currentPack != null && (
+              <>
+                <UpcomingPacks
+                  packs={upcoming}
+                  have={have}
+                  onSelectFormation={handleSelectFormation}
+                />
+                <MonsterEntry
+                  onSubmit={handleSubmitEncounter}
+                  error={entryError}
+                  positionLocked
+                />
+              </>
+            )}
           </>
         )}
-      </div>
+
+        {activeTab === "mechanics" && <VeldtGuide />}
+        {activeTab === "guide" && <RageGuide />}
+        {activeTab === "abilities" && <RageAbilities />}
+      </main>
 
       <footer className="app-footer">
         <p>
